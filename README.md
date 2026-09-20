@@ -1,3 +1,11 @@
+# 短い休日
+
+> **移転しました** → [https://heijitsu-bunko.pages.dev/works/mijikai-kyujitsu](https://heijitsu-bunko.pages.dev/works/mijikai-kyujitsu)
+>
+> この作品は「平日文庫」で公開しています。このリポジトリはアーカイブ済みで、GitHub Pages は移転先への転送ページになっています。公開当時の原本はコミット履歴に残っています。
+
+---
+
 # 短い休日 — A Short Holiday
 
 中編小説『短い休日』の公開用リポジトリです。公開先: <https://yusuke-aoki-bit.github.io/short-holiday/>
