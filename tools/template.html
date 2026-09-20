@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="ja" data-mode="tate">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>短い休日</title>
+<meta name="description" content="週の記憶を失う男と、木曜の深夜だけ届く娘への手紙。長い一週間と短い休日を描いた中編小説。">
+<meta name="author" content="Yusuke">
+<meta name="theme-color" content="#F0F1F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121517" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="短い休日">
+<meta property="og:description" content="週の記憶を失う男と、木曜の深夜だけ届く娘への手紙。長い一週間と短い休日を描いた中編小説。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://yusuke-aoki-bit.github.io/short-holiday/">
+<meta property="og:image" content="https://yusuke-aoki-bit.github.io/short-holiday/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="縦組みで「短い休日」と記された表紙">
+<meta property="og:site_name" content="短い休日 — A Short Holiday">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://yusuke-aoki-bit.github.io/short-holiday/">
+<script>try{var m=localStorage.getItem("mjkk-mode");if(m==="yoko"||m==="tate")document.documentElement.setAttribute("data-mode",m);}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%2314181A%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2724%27%20font-size%3D%2721%27%20text-anchor%3D%27middle%27%20fill%3D%27%23F0F1F1%27%20font-family%3D%27serif%27%3E%E4%BC%91%3C%2Ftext%3E%3C%2Fsvg%3E">
+<style>
+:root{
+  --paper:#F0F1F1; --surface:#FAFAF9; --surface-2:#E6E8E7;
+  --ink:#14181A; --body-ink:#21272A; --muted:#5B646B; --faint:#8A9299; --rule:#D0D4D3;
+  --hi:#8A6233; --hi-soft:#8a62331a; --hi-line:#8a623359;
+  --yo:#3B5674; --yo-soft:#3b56741a; --yo-line:#3b567459;
+  --shadow:0 1px 2px #14181a0d,0 8px 24px #14181a0a;
+  --mincho:"Hiragino Mincho ProN","HiraMinProN-W3","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP","Source Han Serif JP","Source Han Serif","IPAexMincho","TakaoExMincho","MS PMincho",serif;
+  --gothic:"Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP","Noto Sans CJK JP","IPAexGothic",system-ui,-apple-system,"Segoe UI","Meiryo",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#121517; --surface:#191D20; --surface-2:#212629;
+    --ink:#E6E9E8; --body-ink:#D6DBD9; --muted:#99A2A8; --faint:#6C747A; --rule:#2D3336;
+    --hi:#D3AC79; --hi-soft:#d3ac791f; --hi-line:#d3ac7966;
+    --yo:#90B2D0; --yo-soft:#90b2d01f; --yo-line:#90b2d066;
+    --shadow:0 1px 2px #0006,0 8px 24px #0004;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121517; --surface:#191D20; --surface-2:#212629;
+  --ink:#E6E9E8; --body-ink:#D6DBD9; --muted:#99A2A8; --faint:#6C747A; --rule:#2D3336;
+  --hi:#D3AC79; --hi-soft:#d3ac791f; --hi-line:#d3ac7966;
+  --yo:#90B2D0; --yo-soft:#90b2d01f; --yo-line:#90b2d066;
+  --shadow:0 1px 2px #0006,0 8px 24px #0004;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--gothic); font-size:15px; line-height:1.85;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--yo);outline-offset:3px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;z-index:9;background:var(--surface);border:1px solid var(--rule);padding:8px 14px;border-radius:3px}
+
+.col{max-width:44em;margin-inline:auto;padding-inline:24px}
+.shell{max-width:1180px;margin-inline:auto;padding-inline:24px}
+
+.site-head{padding:min(14vh,96px) 0 40px;display:flex;flex-direction:column;gap:18px;text-align:center;align-items:center}
+.kicker{margin:0;font-family:var(--mono);font-size:11px;letter-spacing:.28em;color:var(--faint);text-transform:uppercase}
+.site-head h1{
+  margin:0;font-family:var(--mincho);font-weight:600;
+  font-size:clamp(36px,8vw,58px);line-height:1.3;letter-spacing:.14em;text-indent:.14em;
+}
+.lede{margin:0;font-family:var(--mincho);font-size:16px;line-height:2.05;color:var(--muted);max-width:32em;text-wrap:pretty}
+.en{margin:0;font-family:Georgia,"Times New Roman",Times,serif;font-style:italic;font-size:15px;letter-spacing:.09em;color:var(--faint)}
+.stat{margin:0;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:var(--faint)}
+.rule{width:56px;height:1px;background:var(--rule);border:0;margin:6px 0}
+
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.seg button{font-family:var(--gothic);font-size:13px;letter-spacing:.06em;padding:8px 18px;border:0;background:transparent;color:var(--muted);cursor:pointer;transition:background .15s,color .15s}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.ctl-label{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--faint);display:block;margin-bottom:9px}
+
+.toc{padding-bottom:52px}
+.toc h2{margin:0 0 16px;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--faint);font-weight:400;text-align:center}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:2px 28px}
+.toc a{display:flex;align-items:baseline;gap:10px;text-decoration:none;padding:7px 4px;border-bottom:1px solid var(--rule)}
+.toc a:hover .t-t{color:var(--ink)}
+.t-n{font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:.08em;white-space:nowrap}
+.t-t{font-family:var(--mincho);font-size:15px;color:var(--muted);flex:1}
+
+.chapter{padding-block:60px;border-top:1px solid var(--rule)}
+.chapter:first-child{border-top:0}
+.ch-head{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;justify-content:center;
+  margin:0 0 40px;font-family:var(--mincho);font-weight:400;
+}
+.ch-num{font-size:13px;letter-spacing:.24em;color:var(--faint)}
+.ch-name{font-size:clamp(22px,4vw,30px);letter-spacing:.1em;color:var(--ink)}
+.when{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;padding:3px 10px;border-radius:999px;border:1px solid var(--rule);color:var(--faint);line-height:1.7;white-space:nowrap}
+.when-y{color:var(--yo);border-color:var(--yo-line);background:var(--yo-soft)}
+
+.ch-body{
+  font-family:var(--mincho);color:var(--body-ink);
+  font-size:17px;line-height:2.05;letter-spacing:.035em;
+  font-feature-settings:"palt" 0;
+}
+.ch-body p{margin:0;text-indent:1em}
+.ch-body p.ni{text-indent:0}
+.ch-body .note{
+  font-family:var(--mincho);white-space:pre-wrap;color:var(--muted);
+  font-size:.93em;line-height:1.95;
+  border-inline-start:2px solid var(--rule);padding-inline-start:1.1em;
+  margin-block:1.4em;
+}
+.ch-body .note.letter{border-inline-start-color:var(--yo-line)}
+.ch-body .end{text-indent:0;text-align:center;color:var(--faint);margin-block:2.6em 0;font-size:.9em;letter-spacing:.3em}
+.hint{display:none}
+
+[data-mode="yoko"] .ch-body{max-width:34em;margin-inline:auto}
+[data-mode="yoko"] .ch-body p{margin-block-end:.6em}
+
+[data-mode="tate"] .ch-body{
+  writing-mode:vertical-rl;text-orientation:mixed;
+  width:100%;max-width:100%;
+  height:min(76vh,46em);
+  overflow-x:auto;overflow-y:hidden;
+  padding-block:4px;padding-inline:2px;
+  scroll-behavior:smooth;
+  line-height:2.1;
+}
+[data-mode="tate"] .ch-body p{margin:0}
+[data-mode="tate"] .hint{
+  display:block;text-align:center;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.14em;color:var(--faint);margin:14px 0 0
+}
+[data-mode="tate"] .ch-body::-webkit-scrollbar{height:9px}
+[data-mode="tate"] .ch-body::-webkit-scrollbar-thumb{background:var(--rule);border-radius:99px}
+[data-mode="tate"] .ch-body::-webkit-scrollbar-track{background:transparent}
+
+.colophon{border-top:1px solid var(--rule);margin-top:20px;padding-block:44px 20px;display:flex;flex-direction:column;gap:12px;text-align:center;align-items:center}
+.colophon p{margin:0;font-size:12.5px;color:var(--faint);line-height:1.9;max-width:34em}
+.colophon .work{font-family:var(--mincho);font-size:15px;color:var(--muted);letter-spacing:.1em}
+
+.bpwrap{margin-block:40px 88px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);overflow:hidden}
+.bpwrap>summary{
+  cursor:pointer;list-style:none;padding:20px 24px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;
+  font-family:var(--gothic);
+}
+.bpwrap>summary::-webkit-details-marker{display:none}
+.bpwrap>summary::before{content:"＋";font-family:var(--mono);color:var(--faint);font-size:14px}
+.bpwrap[open]>summary::before{content:"−"}
+.bpwrap>summary b{font-family:var(--mincho);font-size:16px;font-weight:600;letter-spacing:.06em}
+.bpwrap>summary span{font-size:12.5px;color:var(--hi)}
+.bpwrap>summary:hover{background:var(--surface-2)}
+
+.bp{max-width:920px;margin:0 auto;padding:16px 24px 72px;display:flex;flex-direction:column;gap:64px}
+.bp .masthead{display:flex;flex-direction:column;gap:14px;border-bottom:1px solid var(--rule);padding-bottom:26px}
+.bp .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
+.bp .bp-title{font-family:var(--mincho);font-weight:600;font-size:clamp(24px,4.6vw,34px);line-height:1.35;margin:0;letter-spacing:.06em}
+.bp .masthead p{margin:0;color:var(--muted);max-width:60ch;font-size:14px;line-height:1.9}
+.bp .legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:4px}
+.bp .legend span{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.bp .legend i{width:11px;height:11px;border-radius:50%;display:block}
+.bp .sw-h{background:var(--hi)} .bp .sw-y{background:var(--yo)} .bp .sw-b{background:var(--faint)}
+.bp section{display:flex;flex-direction:column;gap:20px}
+.bp .sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.bp .sec-num{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.1em}
+.bp h4{font-family:var(--mincho);font-weight:500;font-size:21px;margin:0;letter-spacing:.05em}
+.bp .sec-note{font-size:13px;color:var(--muted);margin:0;max-width:62ch;line-height:1.9}
+.bp figure{margin:0;display:flex;flex-direction:column;gap:12px}
+.bp .figbox{background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:20px 16px;overflow-x:auto}
+.bp figure svg{display:block;width:100%;height:auto;min-width:620px}
+.bp figcaption{font-size:12.5px;color:var(--muted);line-height:1.8}
+.bp .node{stroke-width:1.2}
+.bp .node-h{fill:var(--hi-soft);stroke:var(--hi)}
+.bp .node-y{fill:var(--yo-soft);stroke:var(--yo)}
+.bp .node-n{fill:var(--surface-2);stroke:var(--rule)}
+.bp .nm{font-family:var(--gothic);font-size:14px;font-weight:500;fill:var(--ink)}
+.bp .nm-s{font-family:var(--gothic);font-size:10.5px;fill:var(--muted)}
+.bp .edge{stroke:var(--faint);stroke-width:1.1;fill:none}
+.bp .edge-main{stroke:var(--ink);stroke-width:2;fill:none}
+.bp .edge-h{stroke:var(--hi-line);stroke-width:1.4;fill:none}
+.bp .edge-y{stroke:var(--yo-line);stroke-width:1.4;fill:none}
+.bp .elab{font-family:var(--gothic);font-size:11px;fill:var(--muted)}
+.bp .elab-i{font-family:var(--gothic);font-size:11px;fill:var(--ink);font-weight:500}
+.bp .dash{stroke-dasharray:4 4}
+.bp .fill-h{fill:var(--hi-soft)} .bp .fill-y{fill:var(--yo-soft)}
+.bp .tl{position:relative;display:flex;flex-direction:column}
+.bp .tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--rule);transform:translateX(-.5px)}
+.bp .band{display:grid;grid-template-columns:1fr 44px 1fr;row-gap:14px;align-items:start;padding:10px 0 30px}
+.bp .band-head{grid-column:1/-1;display:flex;justify-content:center;margin-bottom:8px}
+.bp .band-head b{font-family:var(--mono);font-size:11px;letter-spacing:.16em;font-weight:500;background:var(--paper);color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:4px 16px;position:relative;z-index:1}
+.bp .ev{position:relative;background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:11px 14px}
+.bp .ev .d{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--faint);display:block;margin-bottom:3px}
+.bp .ev p{margin:0;font-size:13.5px;line-height:1.75}
+.bp .ev em{font-style:normal;color:var(--muted);font-size:12.5px;display:block;margin-top:3px}
+.bp .ev.h{grid-column:1;border-left:2px solid var(--hi)}
+.bp .ev.y{grid-column:3;border-left:2px solid var(--yo)}
+.bp .ev.b{grid-column:1/-1;justify-self:center;max-width:min(520px,100%);border-left:none;border-top:2px solid var(--ink);text-align:center}
+.bp .ev.h::after,.bp .ev.y::before{content:"";position:absolute;top:16px;width:7px;height:7px;border-radius:50%;background:var(--paper);border:1.5px solid}
+.bp .ev.h::after{right:-26px;border-color:var(--hi)}
+.bp .ev.y::before{left:-26px;border-color:var(--yo)}
+.bp .ev.b .d{color:var(--muted)}
+.bp .ev.peak{border-top-color:var(--hi)}
+.bp .ev.peak p{font-family:var(--mincho);font-size:15px}
+.bp .tablebox{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--paper)}
+.bp table{border-collapse:collapse;width:100%;min-width:660px;font-size:13px}
+.bp th,.bp td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.7}
+.bp thead th{font-size:11px;letter-spacing:.12em;color:var(--faint);font-weight:500;background:var(--surface-2);white-space:nowrap}
+.bp tbody tr:last-child td{border-bottom:none}
+.bp td:first-child{font-family:var(--mincho);font-size:14px;white-space:nowrap;color:var(--ink)}
+.bp .ch{font-family:var(--mono);font-size:10.5px;color:var(--faint);display:block}
+.bp .foot{border-top:1px solid var(--rule);padding-top:22px;font-size:12.5px;color:var(--faint);line-height:1.9}
+
+@media (max-width:720px){
+  .toc ol{grid-template-columns:1fr}
+  .bp .tl::before{left:9px}
+  .bp .band{grid-template-columns:1fr;padding-left:30px}
+  .bp .band-head{justify-content:flex-start;margin-left:-30px}
+  .bp .ev.h,.bp .ev.y,.bp .ev.b{grid-column:1;justify-self:stretch;max-width:none;text-align:left}
+  .bp .ev.b{border-top:none;border-left:2px solid var(--ink)}
+  .bp .ev.h::after,.bp .ev.y::before{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{
+  [data-mode="tate"] .ch-body{writing-mode:horizontal-tb;height:auto;overflow:visible;max-width:none}
+  .seg,.hint,.skip,.toc{display:none}
+  .bpwrap{break-before:page}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#honbun">本文へスキップ</a>
+
+<header class="site-head col">
+  <p class="kicker">中編小説</p>
+  <h1>短い休日</h1>
+  <p class="en">A Short Holiday</p>
+  <hr class="rule">
+  <p class="lede">長い一週間が過ぎ、短い休日が訪れる。<br>その一週間の記憶が、彼にはない。</p>
+  <p class="stat">全10章＋エピローグ ／ 約23,000字</p>
+  <div>
+    <span class="ctl-label">組　方</span>
+    <div class="seg" role="group" aria-label="組方の切り替え">
+      <button type="button" data-set-mode="tate" aria-pressed="true">縦組み</button>
+      <button type="button" data-set-mode="yoko" aria-pressed="false">横組み</button>
+    </div>
+  </div>
+</header>
+<!-- BODY -->
+<footer class="colophon col">
+  <p class="work">短い休日</p>
+  <p>本作は創作であり、登場する人物・団体・出来事はすべて架空のものです。作中の症状の描写は物語のためのもので、医学的な記述ではありません。</p>
+  <p>執筆にあたり Anthropic の AI「Claude」を使用しています。構成・加筆・最終的な判断は作者によるものです。</p>
+  <p>&copy; Yusuke</p>
+</footer>
+
+<details class="bpwrap">
+  <summary><b>設計図 ── 人物相関・週の構造・年表・伏線</b><span>※ 結末まで含む重大なネタバレがあります</span></summary>
+<div class="bp">
+
+  <header class="masthead">
+    <div class="eyebrow">Story bible</div>
+    <h3 class="bp-title">木曜日の設計図</h3>
+    <p>羽鳥誠の三ヶ月を、人物の線・一週間の構造・手紙の経路・年表・モチーフの五つに分解したものです。日付はすべて作中の時間（二〇二六年一月〜四月）で、曜日は実カレンダーに合わせてあります。</p>
+    <div class="legend">
+      <span><i class="sw-h"></i>昼の羽鳥が知っていること</span>
+      <span><i class="sw-y"></i>夜の羽鳥だけが知っていること</span>
+      <span><i class="sw-b"></i>二人ぶんに起きたこと</span>
+    </div>
+  </header>
+
+  <!-- 01 人物相関 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><h4>人物相関</h4></div>
+    <p class="sec-note">中心にいるのは一人の男ですが、作中では二人として振る舞います。周囲の人物は全員、その二人のどちらか一方としか接触しません。誰が「昼」を見ていて、誰が「夜」を見ているか。それがこの図の主題です。</p>
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 940 520" role="img" aria-label="昼の羽鳥と夜の羽鳥を中心に、沖田・センター長・医師・志野・美結が配置された人物相関図">
+          <defs>
+            <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <rect x="286" y="190" width="368" height="118" rx="6" class="dash" fill="none" stroke="var(--faint)" stroke-width="1"/>
+          <text class="nm-s" x="470" y="174" text-anchor="middle">羽鳥 誠（39歳・物流センター設備保全主任）</text>
+
+          <line class="edge" x1="450" y1="108" x2="380" y2="212"/>
+          <text class="elab" x="466" y="152">土曜の午前しか行けない</text>
+
+          <line class="edge" x1="210" y1="138" x2="300" y2="224"/>
+          <text class="elab" x="188" y="180">「駅前にいましたよね」</text>
+
+          <line class="edge" x1="210" y1="346" x2="304" y2="284"/>
+          <text class="elab" x="216" y="322">「五日にしとけ」</text>
+
+          <line class="edge" x1="720" y1="220" x2="656" y2="240"/>
+          <text class="elab" x="716" y="174" text-anchor="end">元妻／養育費／三年</text>
+
+          <path class="edge" d="M762,252 C742,340 620,418 548,436"/>
+          <text class="elab" x="772" y="322">同居</text>
+
+          <line class="edge-h" x1="352" y1="282" x2="428" y2="410"/>
+          <text class="elab" x="340" y="356" text-anchor="end">月に一度の面会</text>
+          <text class="elab" x="340" y="374" text-anchor="end">（第一土曜）</text>
+
+          <line class="edge-y" x1="580" y1="282" x2="512" y2="410"/>
+          <text class="elab" x="600" y="356">毎週木曜の深夜</text>
+          <text class="elab" x="600" y="374">植木鉢の手紙</text>
+
+          <line class="edge-y" x1="440" y1="238" x2="500" y2="238" marker-end="url(#a1)" style="color:var(--yo)"/>
+          <line class="edge-h" x1="500" y1="262" x2="440" y2="262" marker-end="url(#a1)" style="color:var(--hi)"/>
+          <text class="elab-i" x="470" y="208" text-anchor="middle">冷蔵庫の付箋</text>
+
+          <g>
+            <rect class="node node-h" x="300" y="212" width="140" height="68" rx="3"/>
+            <text class="nm" x="370" y="240" text-anchor="middle">昼の羽鳥</text>
+            <text class="nm-s" x="370" y="260" text-anchor="middle">語り手／何も知らない</text>
+          </g>
+          <g>
+            <rect class="node node-y" x="500" y="212" width="140" height="68" rx="3"/>
+            <text class="nm" x="570" y="240" text-anchor="middle">夜の羽鳥</text>
+            <text class="nm-s" x="570" y="260" text-anchor="middle">全部を知っている</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="400" y="52" width="150" height="56" rx="3"/>
+            <text class="nm" x="475" y="76" text-anchor="middle">心療内科の医師</text>
+            <text class="nm-s" x="475" y="95" text-anchor="middle">「生活を変えないと変わりません」</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="60" y="110" width="150" height="56" rx="3"/>
+            <text class="nm" x="135" y="134" text-anchor="middle">沖田</text>
+            <text class="nm-s" x="135" y="153" text-anchor="middle">27歳・後輩</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="60" y="330" width="150" height="56" rx="3"/>
+            <text class="nm" x="135" y="354" text-anchor="middle">センター長</text>
+            <text class="nm-s" x="135" y="373" text-anchor="middle">55歳・見ていて黙っていた人</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="720" y="190" width="160" height="60" rx="3"/>
+            <text class="nm" x="800" y="216" text-anchor="middle">志野</text>
+            <text class="nm-s" x="800" y="235" text-anchor="middle">元妻・植木鉢を残す</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="395" y="410" width="150" height="62" rx="3"/>
+            <text class="nm" x="470" y="436" text-anchor="middle">美結</text>
+            <text class="nm-s" x="470" y="455" text-anchor="middle">11歳・両方を知っている</text>
+          </g>
+
+          <text class="elab-i" x="470" y="502" text-anchor="middle">夜の羽鳥は昼の羽鳥を知っている。昼の羽鳥は、夜の羽鳥を知らない。</text>
+        </svg>
+      </div>
+      <figcaption>沖田・センター長・医師・志野は「昼」としか会わない。美結だけが、二人ともと会っている唯一の人物で、しかも半年間、そのことを誰にも言わなかった。三号棟の階段にいる猫「たれ」も、昼と夜の両方に見られている。</figcaption>
+    </figure>
+  </section>
+
+  <!-- 02 一週間の構造 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><h4>一週間の構造</h4></div>
+    <p class="sec-note">冒頭の一文「長い一週間が過ぎ、短い休日が訪れる」を、そのまま図にしたものです。労働が五日ぶんの記憶を潰し、その潰れた場所に、木曜の深夜だけ別の行動が入り込みます。</p>
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 950 330" role="img" aria-label="月曜から日曜までの一週間を、昼の労働・記憶の欠落・木曜深夜の外出の三段で表した図">
+          <defs>
+            <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <text class="nm-s" x="155" y="36" text-anchor="middle">月</text>
+          <text class="nm-s" x="265" y="36" text-anchor="middle">火</text>
+          <text class="nm-s" x="375" y="36" text-anchor="middle">水</text>
+          <text class="nm-s" x="485" y="36" text-anchor="middle">木</text>
+          <text class="nm-s" x="595" y="36" text-anchor="middle">金</text>
+          <text class="nm-s" x="705" y="36" text-anchor="middle">土</text>
+          <text class="nm-s" x="815" y="36" text-anchor="middle">日</text>
+
+          <text class="nm-s" x="88" y="96" text-anchor="end">昼の羽鳥</text>
+          <rect class="node node-h" x="110" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="220" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="330" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="440" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="550" y="56" width="90" height="64" rx="2"/>
+          <text class="elab" x="375" y="94" text-anchor="middle">7:30 – 20:00　残業月60〜80時間</text>
+          <rect class="node node-n" x="660" y="76" width="90" height="44" rx="2"/>
+          <rect class="node node-n" x="770" y="76" width="90" height="44" rx="2"/>
+          <text class="elab" x="760" y="104" text-anchor="middle">短い休日</text>
+
+          <rect class="node node-n dash" x="110" y="134" width="530" height="20" rx="2"/>
+          <text class="elab" x="375" y="149" text-anchor="middle">長い灰色の帯 ── この五日ぶんの記憶が、切り分けられない</text>
+          <rect class="node node-n" x="660" y="134" width="200" height="20" rx="2"/>
+          <text class="elab" x="760" y="149" text-anchor="middle">覚えている</text>
+
+          <text class="nm-s" x="88" y="212" text-anchor="end">夜の羽鳥</text>
+          <rect class="node node-y" x="440" y="178" width="90" height="66" rx="2"/>
+          <text class="elab" x="485" y="202" text-anchor="middle">1:02 出発</text>
+          <text class="elab" x="485" y="234" text-anchor="middle">4:38 帰宅</text>
+
+          <line class="edge-y" x1="530" y1="204" x2="646" y2="204" marker-end="url(#a2)" style="color:var(--yo)"/>
+          <line class="edge-y dash" x1="646" y1="224" x2="530" y2="224" marker-end="url(#a2)" style="color:var(--yo)"/>
+          <text class="elab" x="588" y="196" text-anchor="middle">二十九キロ</text>
+          <text class="elab" x="588" y="244" text-anchor="middle">往復五十八キロ</text>
+
+          <rect class="node node-n" x="650" y="178" width="170" height="66" rx="3"/>
+          <text class="nm" x="735" y="204" text-anchor="middle">団地 三号棟</text>
+          <text class="nm-s" x="735" y="226" text-anchor="middle">四階の窓と、割れた植木鉢</text>
+
+          <text class="elab-i" x="475" y="290" text-anchor="middle">平日は病院が開いていない。土曜の午前だけが、彼が自分の異常にたどり着ける時間だった。</text>
+          <text class="elab" x="475" y="312" text-anchor="middle">それが、決意から受診まで一ヶ月かかった理由になっている。</text>
+        </svg>
+      </div>
+      <figcaption>玄関のたたきの濡れ、洗濯機の靴下二足、給油の回数、走行距離の五十八キロ。第二章と第三章で並べた小さな異常は、すべてこの図の「夜」の帯から出ている。</figcaption>
+    </figure>
+  </section>
+
+  <!-- 03 手紙の三角形 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><h4>手紙の三角形</h4></div>
+    <p class="sec-note">この物語には、言葉の受け渡し場所が二つあります。冷蔵庫の扉と、外階段の下の割れた植木鉢。どちらも、二人が同時に立ち会うことのない場所です。</p>
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 900 340" role="img" aria-label="夜の羽鳥を頂点に、昼の羽鳥と美結を底辺とする三角形。辺の上に冷蔵庫の付箋と割れた植木鉢がある">
+          <line class="edge-y" x1="230" y1="228" x2="290" y2="168"/>
+          <line class="edge-y" x1="368" y1="128" x2="440" y2="102"/>
+          <line class="edge-y" x1="540" y1="102" x2="612" y2="128"/>
+          <line class="edge-y" x1="690" y1="168" x2="748" y2="226"/>
+          <line class="edge-h dash" x1="232" y1="252" x2="676" y2="252"/>
+          <text class="elab" x="454" y="284" text-anchor="middle">月に一度の面会。ここでは、二人とも手紙の話をしない</text>
+
+          <g>
+            <rect class="node node-y" x="370" y="42" width="170" height="60" rx="3"/>
+            <text class="nm" x="455" y="68" text-anchor="middle">夜の羽鳥</text>
+            <text class="nm-s" x="455" y="88" text-anchor="middle">木曜 1:02 – 4:38</text>
+          </g>
+          <g>
+            <rect class="node node-h" x="60" y="222" width="172" height="60" rx="3"/>
+            <text class="nm" x="146" y="248" text-anchor="middle">昼の羽鳥</text>
+            <text class="nm-s" x="146" y="268" text-anchor="middle">語り手</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="676" y="222" width="172" height="60" rx="3"/>
+            <text class="nm" x="762" y="248" text-anchor="middle">美結</text>
+            <text class="nm-s" x="762" y="268" text-anchor="middle">11歳</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="216" y="124" width="152" height="46" rx="3"/>
+            <text class="nm" x="292" y="146" text-anchor="middle">冷蔵庫の付箋</text>
+            <text class="nm-s" x="292" y="163" text-anchor="middle">週に一往復</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="536" y="124" width="152" height="46" rx="3"/>
+            <text class="nm" x="612" y="146" text-anchor="middle">割れた植木鉢</text>
+            <text class="nm-s" x="612" y="163" text-anchor="middle">半年で六十四枚</text>
+          </g>
+
+          <text class="elab-i" x="454" y="318" text-anchor="middle">終章で、この点線が実線になる ── 昼の羽鳥が、はじめてインターホンを押す。</text>
+        </svg>
+      </div>
+      <figcaption>付箋のやりとりは三行を超えない。植木鉢の手紙は、美結が三十二枚、夜の羽鳥が三十二枚で、ちょうど同数になっている。始まりは父の一枚目、終わりは娘の一枚。</figcaption>
+    </figure>
+  </section>
+
+  <!-- 04 年表 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><h4>年表</h4></div>
+    <p class="sec-note">前年の八月に手紙が始まり、一月に昼の羽鳥が気づき、四月に決着します。左が「昼が知っていること」、右が「夜だけが知っていて、あとから昼が読むこと」。</p>
+
+    <div class="tl">
+
+      <div class="band">
+        <div class="band-head"><b>前 年 — 誰も気づいていない半年</b></div>
+        <div class="ev y"><span class="d">8月・木曜</span><p>夜の羽鳥が、はじめて団地の下に紙を置く</p><em>コンビニのレシートの裏。「よみたくなければ、すててください」</em></div>
+        <div class="ev y"><span class="d">8月</span><p>美結が返事を書く。「しょうこを書いてください」</p><em>五歳のとき、ペンギンにかまれた話で証明される</em></div>
+        <div class="ev y"><span class="d">9月</span><p>「もういいですと言ったら、来ないでください」</p><em>十一歳が自分でつけた、たったひとつの約束</em></div>
+        <div class="ev h"><span class="d">秋</span><p>給油が月三回から四回、五回に増える</p><em>燃費が落ちたのだと思っていた</em></div>
+        <div class="ev y"><span class="d">12月</span><p>美結が気づく。「夜のおとうさんと、昼のおとうさんは、ちがう人ですか」</p></div>
+        <div class="ev y"><span class="d">12月</span><p>夜の羽鳥が答える。「昼のとうさんは、これを知らない」</p><em>この時点で、夜は昼の存在を把握している</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>1 月 — 気づく</b></div>
+        <div class="ev y"><span class="d">1月15日・木</span><p>プリンを四つ買い、二つを植木鉢に置く</p></div>
+        <div class="ev h"><span class="d">1月16日・金</span><p>冷蔵庫にプリンが二つ。自分が買った記憶がない</p><em>第一章。「そんなもんだろう」と思って扉を閉める</em></div>
+        <div class="ev h"><span class="d">1月19日・月</span><p>沖田の目撃証言／半年ぶんの写真を見つける</p><em>撮影日時は全部、木曜の夜が明けた時間</em></div>
+        <div class="ev h"><span class="d">1月20日ごろ</span><p>初診の予約。いちばん早くて三週間後の土曜</p></div>
+        <div class="ev h"><span class="d">1月22日 / 29日</span><p>目覚ましは自分で止められ、空き缶は床に並べられる</p><em>鍵を替えても、たたきは濡れている</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>2 月 — 確かめる</b></div>
+        <div class="ev b"><span class="d">2月6日 – 13日</span><p>走行距離を毎日記録する</p><em>木曜の夜から金曜の朝までに、五十八キロ</em></div>
+        <div class="ev h"><span class="d">2月7日・土</span><p>面会。別れ際、美結が「またもく——」と言いかけて飲み込む</p></div>
+        <div class="ev h"><span class="d">2月7日・夜</span><p>冷蔵庫に付箋を貼る。『木曜の夜、どこへ行っている』</p></div>
+        <div class="ev y"><span class="d">2月13日・金</span><p>返事がある。『みにいった』</p><em>自分の字。ただし、少しだけ丸い</em></div>
+        <div class="ev b peak"><span class="d">2月14日・土</span><p>午前、初診。午後、団地。<br>割れた植木鉢の中に、半年ぶんの手紙</p><em>その場で六十四枚を撮影し、袋を元に戻す</em></div>
+        <div class="ev h"><span class="d">同日・夜</span><p>四時間かけて全部読む</p><em>付箋に『読んだ。全部』『ありがとう』と書く</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>3 月 — 見る、話す</b></div>
+        <div class="ev h"><span class="d">2月16日・月</span><p>センター長に休暇を申し出る。「五日にしとけ」</p></div>
+        <div class="ev b"><span class="d">3月3日 – 12日</span><p>脳波・MRI・一泊の睡眠検査</p><em>器質的な異常は出ない</em></div>
+        <div class="ev b peak"><span class="d">3月5日・木</span><p>カメラに映った自分が、レンズに向かって<br>「だ・い・じょ・う・ぶ」と口を動かす</p><em>翌朝の付箋 ──『カメラは、やめてくれ』『こわがらせて、すまん』</em></div>
+        <div class="ev h"><span class="d">3月14日・土</span><p>診断。解離性健忘と遁走。「切り離されているのは、会いたい気持ちです」</p></div>
+        <div class="ev b"><span class="d">同日・午後</span><p>志野に全部話す。彼女はすでに美結から聞いていた</p><em>「じゃあ、あの植木鉢は、そのままにしとく」</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>4 月 — 昼が、正面から来る</b></div>
+        <div class="ev b peak"><span class="d">4月4日・土</span><p>インターホンを押す。「お母さん！　昼のほう！」</p><em>三時間いて、帰る</em></div>
+        <div class="ev y"><span class="d">同日</span><p>植木鉢に、美結からの一枚<br>「これは、あなたのおかげです」</p></div>
+        <div class="ev h"><span class="d">同日</span><p>昼の羽鳥が、はじめて植木鉢に書く<br>「夜のとうさんによろしく」</p></div>
+        <div class="ev b"><span class="d">その夜</span><p>付箋 ──『来週の木曜、行くなら、うちのプリンを持っていけ』『無理はするな』</p><em>症状は消えていない。睡眠は五時間半から六時間になっただけ</em></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 05 モチーフ -->
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><h4>モチーフの往復</h4></div>
+    <p class="sec-note">七つの小道具を、「置く → 育てる → 回収する」の三段で通しています。どれも最初は生活のノイズとして出てきて、あとから証拠に変わります。</p>
+    <div class="tablebox">
+      <table>
+        <thead>
+          <tr><th>モチーフ</th><th>置く</th><th>育てる</th><th>回収する</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>プリン</td>
+            <td><span class="ch">第一章</span>冷蔵庫に二つ。買った記憶がない</td>
+            <td><span class="ch">第四章</span>ファミレスで美結が頼む。「知ってる」</td>
+            <td><span class="ch">第八章</span>「昼のとうさんは、自分が食べたと思っている」</td>
+          </tr>
+          <tr>
+            <td>玄関のたたき／靴下</td>
+            <td><span class="ch">第二章</span>濡れている。靴下が二足ある朝</td>
+            <td><span class="ch">第三章</span>鍵を替えても、新しい鍵で開けられる</td>
+            <td><span class="ch">第九章</span>映像の中で、靴下を履き替えてから出ていく</td>
+          </tr>
+          <tr>
+            <td>走行距離</td>
+            <td><span class="ch">第二章</span>給油が月三回から五回に</td>
+            <td><span class="ch">第三章</span>一週間、毎日メーターを撮る</td>
+            <td><span class="ch">第七章</span>二十九キロ、四十分。団地に着く</td>
+          </tr>
+          <tr>
+            <td>「またもく」</td>
+            <td><span class="ch">第四章</span>美結が言いかけて、飲み込む</td>
+            <td><span class="ch">第八章</span>十二月の手紙に、同じ場面が書かれている</td>
+            <td><span class="ch">エピローグ</span>「昼のほう！」と呼び分けられる</td>
+          </tr>
+          <tr>
+            <td>冷蔵庫の付箋</td>
+            <td><span class="ch">第五章</span>『木曜の夜、どこへ行っている』</td>
+            <td><span class="ch">第五・八章</span>『みにいった』『読んだ。全部』</td>
+            <td><span class="ch">エピローグ</span>『無理はするな』── 言う相手が自分しかいない</td>
+          </tr>
+          <tr>
+            <td>割れた植木鉢</td>
+            <td><span class="ch">第七章</span>外階段の下の、外から見えない隙間</td>
+            <td><span class="ch">第八章</span>半年ぶん、六十四枚</td>
+            <td><span class="ch">第十章</span>志野が「そのままにしとく」と言う</td>
+          </tr>
+          <tr>
+            <td>顔</td>
+            <td><span class="ch">第四章</span>志野に「顔色、悪いよ」と言われる</td>
+            <td><span class="ch">第九章</span>映像の中の自分は、眉が開いている</td>
+            <td><span class="ch">エピローグ</span>「あれは、俺のいちばんいい顔だった」</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 06 不穏さの設計 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">06</span><h4>不穏さの設計</h4></div>
+    <p class="sec-note">超常現象は一度も起こりません。読者の不安は、次の五段階で上げてから、行き先を反転させています。</p>
+    <div class="tablebox">
+      <table>
+        <thead>
+          <tr><th>段</th><th>読者が疑うこと</th><th>そのために置いた事実</th><th>反転のさせ方</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>一</td><td>ただ疲れているだけだろう</td><td><span class="ch">第一・二章</span>プリン、靴下、給油、写真</td><td>単体では説明がつく範囲に抑える</td></tr>
+          <tr><td>二</td><td>誰かが部屋に入っている</td><td><span class="ch">第三章</span>空き缶が並べられている／鍵を替えても濡れている</td><td>合鍵の可能性を明示的に潰す</td></tr>
+          <tr><td>三</td><td>自分が何かをしている</td><td><span class="ch">第三・五章</span>五十八キロ／『みにいった』</td><td>行き先が元妻の家だと分かる。読者の不安が最大になる場所</td></tr>
+          <tr><td>四</td><td>それは加害ではないのか</td><td><span class="ch">第六章</span>医師が「傷は」と訊く／「なおさら、話してください」</td><td>作中の人物に、読者と同じ懸念を言わせる</td></tr>
+          <tr><td>五</td><td>——</td><td><span class="ch">第七・八章</span>植木鉢の中の六十四枚</td><td>怖さを消さずに、意味だけを裏返す</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sec-note">五段目のあとも不穏さは残したままにしてあります。症状は治らず、彼は自分の人生のいちばんいい時間に、最後まで立ち会えません。冒頭の一文と最終行だけが入れ替わり、木曜日はそこに残ります。</p>
+  </section>
+
+  <p class="foot">「長い一週間が過ぎ、短い休日が訪れる。」──「短い休日が過ぎ、長い一週間が訪れる。／その真ん中に、木曜日がある。」</p>
+
+</div>
+</details>
+
+<script>
+(function(){
+  var root=document.documentElement, KEY="mjkk-mode";
+  var btns=[].slice.call(document.querySelectorAll("[data-set-mode]"));
+  function sync(){
+    var m=root.getAttribute("data-mode");
+    btns.forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-set-mode")===m)); });
+  }
+  function toStart(){
+    if(root.getAttribute("data-mode")!=="tate") return;
+    var list=document.querySelectorAll(".ch-body");
+    for(var i=0;i<list.length;i++){
+      var el=list[i], prev=el.style.scrollBehavior, p0=el.querySelector("p");
+      el.style.scrollBehavior="auto";
+      if(p0){ el.scrollLeft += (p0.getBoundingClientRect().right - el.getBoundingClientRect().right) + 4; }
+      el.style.scrollBehavior=prev;
+    }
+  }
+  function set(m){
+    root.setAttribute("data-mode", m);
+    try{ localStorage.setItem(KEY, m); }catch(e){}
+    sync(); toStart();
+  }
+  btns.forEach(function(b){ b.addEventListener("click", function(){ set(b.getAttribute("data-set-mode")); }); });
+  sync();
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", toStart); } else { toStart(); }
+  window.addEventListener("load", toStart);
+  var t; window.addEventListener("resize", function(){ clearTimeout(t); t=setTimeout(toStart, 250); });
+})();
+</script>
+</body>
+</html>

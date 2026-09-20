@@ -1,0 +1,1731 @@
+<!doctype html>
+<html lang="ja" data-mode="tate">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>短い休日</title>
+<meta name="description" content="週の記憶を失う男と、木曜の深夜だけ届く娘への手紙。長い一週間と短い休日を描いた中編小説。">
+<meta name="author" content="Yusuke">
+<meta name="theme-color" content="#F0F1F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121517" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="短い休日">
+<meta property="og:description" content="週の記憶を失う男と、木曜の深夜だけ届く娘への手紙。長い一週間と短い休日を描いた中編小説。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://yusuke-aoki-bit.github.io/short-holiday/">
+<meta property="og:image" content="https://yusuke-aoki-bit.github.io/short-holiday/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="縦組みで「短い休日」と記された表紙">
+<meta property="og:site_name" content="短い休日 — A Short Holiday">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://yusuke-aoki-bit.github.io/short-holiday/">
+<script>try{var m=localStorage.getItem("mjkk-mode");if(m==="yoko"||m==="tate")document.documentElement.setAttribute("data-mode",m);}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%2314181A%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2724%27%20font-size%3D%2721%27%20text-anchor%3D%27middle%27%20fill%3D%27%23F0F1F1%27%20font-family%3D%27serif%27%3E%E4%BC%91%3C%2Ftext%3E%3C%2Fsvg%3E">
+<style>
+:root{
+  --paper:#F0F1F1; --surface:#FAFAF9; --surface-2:#E6E8E7;
+  --ink:#14181A; --body-ink:#21272A; --muted:#5B646B; --faint:#8A9299; --rule:#D0D4D3;
+  --hi:#8A6233; --hi-soft:#8a62331a; --hi-line:#8a623359;
+  --yo:#3B5674; --yo-soft:#3b56741a; --yo-line:#3b567459;
+  --shadow:0 1px 2px #14181a0d,0 8px 24px #14181a0a;
+  --mincho:"Hiragino Mincho ProN","HiraMinProN-W3","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP","Source Han Serif JP","Source Han Serif","IPAexMincho","TakaoExMincho","MS PMincho",serif;
+  --gothic:"Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP","Noto Sans CJK JP","IPAexGothic",system-ui,-apple-system,"Segoe UI","Meiryo",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#121517; --surface:#191D20; --surface-2:#212629;
+    --ink:#E6E9E8; --body-ink:#D6DBD9; --muted:#99A2A8; --faint:#6C747A; --rule:#2D3336;
+    --hi:#D3AC79; --hi-soft:#d3ac791f; --hi-line:#d3ac7966;
+    --yo:#90B2D0; --yo-soft:#90b2d01f; --yo-line:#90b2d066;
+    --shadow:0 1px 2px #0006,0 8px 24px #0004;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121517; --surface:#191D20; --surface-2:#212629;
+  --ink:#E6E9E8; --body-ink:#D6DBD9; --muted:#99A2A8; --faint:#6C747A; --rule:#2D3336;
+  --hi:#D3AC79; --hi-soft:#d3ac791f; --hi-line:#d3ac7966;
+  --yo:#90B2D0; --yo-soft:#90b2d01f; --yo-line:#90b2d066;
+  --shadow:0 1px 2px #0006,0 8px 24px #0004;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--gothic); font-size:15px; line-height:1.85;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--yo);outline-offset:3px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;z-index:9;background:var(--surface);border:1px solid var(--rule);padding:8px 14px;border-radius:3px}
+
+.col{max-width:44em;margin-inline:auto;padding-inline:24px}
+.shell{max-width:1180px;margin-inline:auto;padding-inline:24px}
+
+.site-head{padding:min(14vh,96px) 0 40px;display:flex;flex-direction:column;gap:18px;text-align:center;align-items:center}
+.kicker{margin:0;font-family:var(--mono);font-size:11px;letter-spacing:.28em;color:var(--faint);text-transform:uppercase}
+.site-head h1{
+  margin:0;font-family:var(--mincho);font-weight:600;
+  font-size:clamp(36px,8vw,58px);line-height:1.3;letter-spacing:.14em;text-indent:.14em;
+}
+.lede{margin:0;font-family:var(--mincho);font-size:16px;line-height:2.05;color:var(--muted);max-width:32em;text-wrap:pretty}
+.en{margin:0;font-family:Georgia,"Times New Roman",Times,serif;font-style:italic;font-size:15px;letter-spacing:.09em;color:var(--faint)}
+.stat{margin:0;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:var(--faint)}
+.rule{width:56px;height:1px;background:var(--rule);border:0;margin:6px 0}
+
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.seg button{font-family:var(--gothic);font-size:13px;letter-spacing:.06em;padding:8px 18px;border:0;background:transparent;color:var(--muted);cursor:pointer;transition:background .15s,color .15s}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.ctl-label{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--faint);display:block;margin-bottom:9px}
+
+.toc{padding-bottom:52px}
+.toc h2{margin:0 0 16px;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--faint);font-weight:400;text-align:center}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:2px 28px}
+.toc a{display:flex;align-items:baseline;gap:10px;text-decoration:none;padding:7px 4px;border-bottom:1px solid var(--rule)}
+.toc a:hover .t-t{color:var(--ink)}
+.t-n{font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:.08em;white-space:nowrap}
+.t-t{font-family:var(--mincho);font-size:15px;color:var(--muted);flex:1}
+
+.chapter{padding-block:60px;border-top:1px solid var(--rule)}
+.chapter:first-child{border-top:0}
+.ch-head{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;justify-content:center;
+  margin:0 0 40px;font-family:var(--mincho);font-weight:400;
+}
+.ch-num{font-size:13px;letter-spacing:.24em;color:var(--faint)}
+.ch-name{font-size:clamp(22px,4vw,30px);letter-spacing:.1em;color:var(--ink)}
+.when{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;padding:3px 10px;border-radius:999px;border:1px solid var(--rule);color:var(--faint);line-height:1.7;white-space:nowrap}
+.when-y{color:var(--yo);border-color:var(--yo-line);background:var(--yo-soft)}
+
+.ch-body{
+  font-family:var(--mincho);color:var(--body-ink);
+  font-size:17px;line-height:2.05;letter-spacing:.035em;
+  font-feature-settings:"palt" 0;
+}
+.ch-body p{margin:0;text-indent:1em}
+.ch-body p.ni{text-indent:0}
+.ch-body .note{
+  font-family:var(--mincho);white-space:pre-wrap;color:var(--muted);
+  font-size:.93em;line-height:1.95;
+  border-inline-start:2px solid var(--rule);padding-inline-start:1.1em;
+  margin-block:1.4em;
+}
+.ch-body .note.letter{border-inline-start-color:var(--yo-line)}
+.ch-body .end{text-indent:0;text-align:center;color:var(--faint);margin-block:2.6em 0;font-size:.9em;letter-spacing:.3em}
+.hint{display:none}
+
+[data-mode="yoko"] .ch-body{max-width:34em;margin-inline:auto}
+[data-mode="yoko"] .ch-body p{margin-block-end:.6em}
+
+[data-mode="tate"] .ch-body{
+  writing-mode:vertical-rl;text-orientation:mixed;
+  width:100%;max-width:100%;
+  height:min(76vh,46em);
+  overflow-x:auto;overflow-y:hidden;
+  padding-block:4px;padding-inline:2px;
+  scroll-behavior:smooth;
+  line-height:2.1;
+}
+[data-mode="tate"] .ch-body p{margin:0}
+[data-mode="tate"] .hint{
+  display:block;text-align:center;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.14em;color:var(--faint);margin:14px 0 0
+}
+[data-mode="tate"] .ch-body::-webkit-scrollbar{height:9px}
+[data-mode="tate"] .ch-body::-webkit-scrollbar-thumb{background:var(--rule);border-radius:99px}
+[data-mode="tate"] .ch-body::-webkit-scrollbar-track{background:transparent}
+
+.colophon{border-top:1px solid var(--rule);margin-top:20px;padding-block:44px 20px;display:flex;flex-direction:column;gap:12px;text-align:center;align-items:center}
+.colophon p{margin:0;font-size:12.5px;color:var(--faint);line-height:1.9;max-width:34em}
+.colophon .work{font-family:var(--mincho);font-size:15px;color:var(--muted);letter-spacing:.1em}
+
+.bpwrap{margin-block:40px 88px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);overflow:hidden}
+.bpwrap>summary{
+  cursor:pointer;list-style:none;padding:20px 24px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;
+  font-family:var(--gothic);
+}
+.bpwrap>summary::-webkit-details-marker{display:none}
+.bpwrap>summary::before{content:"＋";font-family:var(--mono);color:var(--faint);font-size:14px}
+.bpwrap[open]>summary::before{content:"−"}
+.bpwrap>summary b{font-family:var(--mincho);font-size:16px;font-weight:600;letter-spacing:.06em}
+.bpwrap>summary span{font-size:12.5px;color:var(--hi)}
+.bpwrap>summary:hover{background:var(--surface-2)}
+
+.bp{max-width:920px;margin:0 auto;padding:16px 24px 72px;display:flex;flex-direction:column;gap:64px}
+.bp .masthead{display:flex;flex-direction:column;gap:14px;border-bottom:1px solid var(--rule);padding-bottom:26px}
+.bp .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
+.bp .bp-title{font-family:var(--mincho);font-weight:600;font-size:clamp(24px,4.6vw,34px);line-height:1.35;margin:0;letter-spacing:.06em}
+.bp .masthead p{margin:0;color:var(--muted);max-width:60ch;font-size:14px;line-height:1.9}
+.bp .legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:4px}
+.bp .legend span{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.bp .legend i{width:11px;height:11px;border-radius:50%;display:block}
+.bp .sw-h{background:var(--hi)} .bp .sw-y{background:var(--yo)} .bp .sw-b{background:var(--faint)}
+.bp section{display:flex;flex-direction:column;gap:20px}
+.bp .sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.bp .sec-num{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.1em}
+.bp h4{font-family:var(--mincho);font-weight:500;font-size:21px;margin:0;letter-spacing:.05em}
+.bp .sec-note{font-size:13px;color:var(--muted);margin:0;max-width:62ch;line-height:1.9}
+.bp figure{margin:0;display:flex;flex-direction:column;gap:12px}
+.bp .figbox{background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:20px 16px;overflow-x:auto}
+.bp figure svg{display:block;width:100%;height:auto;min-width:620px}
+.bp figcaption{font-size:12.5px;color:var(--muted);line-height:1.8}
+.bp .node{stroke-width:1.2}
+.bp .node-h{fill:var(--hi-soft);stroke:var(--hi)}
+.bp .node-y{fill:var(--yo-soft);stroke:var(--yo)}
+.bp .node-n{fill:var(--surface-2);stroke:var(--rule)}
+.bp .nm{font-family:var(--gothic);font-size:14px;font-weight:500;fill:var(--ink)}
+.bp .nm-s{font-family:var(--gothic);font-size:10.5px;fill:var(--muted)}
+.bp .edge{stroke:var(--faint);stroke-width:1.1;fill:none}
+.bp .edge-main{stroke:var(--ink);stroke-width:2;fill:none}
+.bp .edge-h{stroke:var(--hi-line);stroke-width:1.4;fill:none}
+.bp .edge-y{stroke:var(--yo-line);stroke-width:1.4;fill:none}
+.bp .elab{font-family:var(--gothic);font-size:11px;fill:var(--muted)}
+.bp .elab-i{font-family:var(--gothic);font-size:11px;fill:var(--ink);font-weight:500}
+.bp .dash{stroke-dasharray:4 4}
+.bp .fill-h{fill:var(--hi-soft)} .bp .fill-y{fill:var(--yo-soft)}
+.bp .tl{position:relative;display:flex;flex-direction:column}
+.bp .tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--rule);transform:translateX(-.5px)}
+.bp .band{display:grid;grid-template-columns:1fr 44px 1fr;row-gap:14px;align-items:start;padding:10px 0 30px}
+.bp .band-head{grid-column:1/-1;display:flex;justify-content:center;margin-bottom:8px}
+.bp .band-head b{font-family:var(--mono);font-size:11px;letter-spacing:.16em;font-weight:500;background:var(--paper);color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:4px 16px;position:relative;z-index:1}
+.bp .ev{position:relative;background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:11px 14px}
+.bp .ev .d{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--faint);display:block;margin-bottom:3px}
+.bp .ev p{margin:0;font-size:13.5px;line-height:1.75}
+.bp .ev em{font-style:normal;color:var(--muted);font-size:12.5px;display:block;margin-top:3px}
+.bp .ev.h{grid-column:1;border-left:2px solid var(--hi)}
+.bp .ev.y{grid-column:3;border-left:2px solid var(--yo)}
+.bp .ev.b{grid-column:1/-1;justify-self:center;max-width:min(520px,100%);border-left:none;border-top:2px solid var(--ink);text-align:center}
+.bp .ev.h::after,.bp .ev.y::before{content:"";position:absolute;top:16px;width:7px;height:7px;border-radius:50%;background:var(--paper);border:1.5px solid}
+.bp .ev.h::after{right:-26px;border-color:var(--hi)}
+.bp .ev.y::before{left:-26px;border-color:var(--yo)}
+.bp .ev.b .d{color:var(--muted)}
+.bp .ev.peak{border-top-color:var(--hi)}
+.bp .ev.peak p{font-family:var(--mincho);font-size:15px}
+.bp .tablebox{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--paper)}
+.bp table{border-collapse:collapse;width:100%;min-width:660px;font-size:13px}
+.bp th,.bp td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.7}
+.bp thead th{font-size:11px;letter-spacing:.12em;color:var(--faint);font-weight:500;background:var(--surface-2);white-space:nowrap}
+.bp tbody tr:last-child td{border-bottom:none}
+.bp td:first-child{font-family:var(--mincho);font-size:14px;white-space:nowrap;color:var(--ink)}
+.bp .ch{font-family:var(--mono);font-size:10.5px;color:var(--faint);display:block}
+.bp .foot{border-top:1px solid var(--rule);padding-top:22px;font-size:12.5px;color:var(--faint);line-height:1.9}
+
+@media (max-width:720px){
+  .toc ol{grid-template-columns:1fr}
+  .bp .tl::before{left:9px}
+  .bp .band{grid-template-columns:1fr;padding-left:30px}
+  .bp .band-head{justify-content:flex-start;margin-left:-30px}
+  .bp .ev.h,.bp .ev.y,.bp .ev.b{grid-column:1;justify-self:stretch;max-width:none;text-align:left}
+  .bp .ev.b{border-top:none;border-left:2px solid var(--ink)}
+  .bp .ev.h::after,.bp .ev.y::before{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{
+  [data-mode="tate"] .ch-body{writing-mode:horizontal-tb;height:auto;overflow:visible;max-width:none}
+  .seg,.hint,.skip,.toc{display:none}
+  .bpwrap{break-before:page}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#honbun">本文へスキップ</a>
+
+<header class="site-head col">
+  <p class="kicker">中編小説</p>
+  <h1>短い休日</h1>
+  <p class="en">A Short Holiday</p>
+  <hr class="rule">
+  <p class="lede">長い一週間が過ぎ、短い休日が訪れる。<br>その一週間の記憶が、彼にはない。</p>
+  <p class="stat">全10章＋エピローグ ／ 約23,000字</p>
+  <div>
+    <span class="ctl-label">組　方</span>
+    <div class="seg" role="group" aria-label="組方の切り替え">
+      <button type="button" data-set-mode="tate" aria-pressed="true">縦組み</button>
+      <button type="button" data-set-mode="yoko" aria-pressed="false">横組み</button>
+    </div>
+  </div>
+</header>
+
+<nav class="toc col" aria-label="目次">
+  <h2>目次</h2>
+  <ol>
+<li><a href="#ch01"><span class="t-n">第一章</span><span class="t-t">金曜日の夜</span><span class="when">1月16日 金</span></a></li>
+<li><a href="#ch02"><span class="t-n">第二章</span><span class="t-t">欠けている</span><span class="when">1月19日 月</span></a></li>
+<li><a href="#ch03"><span class="t-n">第三章</span><span class="t-t">平日は開いていない</span><span class="when">1月20日 – 2月13日</span></a></li>
+<li><a href="#ch04"><span class="t-n">第四章</span><span class="t-t">二月七日</span><span class="when">2月7日 土</span></a></li>
+<li><a href="#ch05"><span class="t-n">第五章</span><span class="t-t">冷蔵庫の紙</span><span class="when when-y">2月7日 – 2月13日</span></a></li>
+<li><a href="#ch06"><span class="t-n">第六章</span><span class="t-t">土曜の診察室</span><span class="when">2月14日 土・午前</span></a></li>
+<li><a href="#ch07"><span class="t-n">第七章</span><span class="t-t">割れた植木鉢</span><span class="when">2月14日 土・午後</span></a></li>
+<li><a href="#ch08"><span class="t-n">第八章</span><span class="t-t">半年ぶんの手紙</span><span class="when when-y">2月14日 土・夜</span></a></li>
+<li><a href="#ch09"><span class="t-n">第九章</span><span class="t-t">木曜日を見る</span><span class="when when-y">2月16日 – 3月6日</span></a></li>
+<li><a href="#ch10"><span class="t-n">第十章</span><span class="t-t">三月の電話</span><span class="when">3月14日 土</span></a></li>
+<li><a href="#ch11"><span class="t-n">エピローグ</span><span class="t-t">短い休日</span><span class="when">4月4日 土</span></a></li>
+  </ol>
+</nav>
+
+<main class="honbun shell" id="honbun">
+<section class="chapter" id="ch01">
+  <h2 class="ch-head"><span class="ch-num">第一章</span><span class="ch-name">金曜日の夜</span><span class="when">1月16日 金</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第一章 本文">
+    <p>長い一週間が過ぎ、短い休日が訪れる。</p>
+    <p>俺の一年は、それだけでできている。五十回ぶんの長い週と、五十回ぶんの短い休み。数えたことはないが、たぶんそういうことだ。数えたところで、増えも減りもしない。</p>
+    <p>金曜の夜、倉庫の照明を半分落とすと、天井のずっと上のほうで、換気扇の音だけが残る。日中はフォークリフトの警告音と、ローラーコンベアの唸りと、検品端末のビープ音で、自分の声も聞こえないくらいうるさい場所だ。それが夜になると、急に体育館みたいな静けさになる。</p>
+    <p>俺はその静けさが嫌いではなかった。</p>
+    <p>一日の中で、まともに物を考えられるのは、その時間だけだったからだ。</p>
+    <p class="ni">「羽鳥さん、まだいます？」</p>
+    <p>二階の事務所から、沖田が階段を降りてきた。二十七歳。去年入ってきた社員で、いまだにヘルメットの顎紐を締めない。</p>
+    <p class="ni">「三番の空調、明日の朝イチで業者来るから、鍵置いといた」</p>
+    <p class="ni">「うわ、すみません、俺がやるはずだったのに」</p>
+    <p class="ni">「いいよ。俺、明日出るし」</p>
+    <p class="ni">「え、土曜ですよね」</p>
+    <p class="ni">「立ち会いだけ。九時から十時」</p>
+    <p>沖田は困った顔をした。この男は、人が損をしているのを見ると、自分のことみたいに困った顔をする。悪くない性格だと思う。長くは持たないだろうな、とも思う。</p>
+    <p class="ni">「羽鳥さん、休んでます？」</p>
+    <p class="ni">「休んでるよ」</p>
+    <p class="ni">「休んでるように見えないですよ」</p>
+    <p class="ni">「土日は休んでる」</p>
+    <p class="ni">「土日だけじゃないですか」</p>
+    <p class="ni">「土日があるだけましだろ」</p>
+    <p>沖田は何か言いかけて、やめた。かわりに、「お疲れさまです」と言って、駐車場のほうへ歩いていった。</p>
+    <p>俺は、その背中を見送りながら、いま何曜日だったかを一瞬わからなくなった。</p>
+    <p>金曜だ。沖田が帰った。金曜だから帰った。</p>
+    <p>こういうことが、そのころ、少しずつ増えていた。</p>
+    <p>うちの会社は、大手のメーカーから倉庫と配送をまるごと請け負っている。俺の仕事は、そのセンターの設備保全と、シフトの管理と、あとは、名前のついていない全部だ。コンベアが止まれば呼ばれるし、パートさんが辞めれば穴を埋めるし、システムが落ちれば本社に電話をかける。</p>
+    <p>三十九歳。この会社に十四年。役職は主任で、そこから上がる見込みはあまりない。</p>
+    <p>残業は月に六十時間から八十時間のあいだを行ったり来たりしている。数字の上ではもう少し少ないことになっているが、それは俺が打刻をしていない時間があるからだ。</p>
+    <p>誰かに強制されているわけではない。ただ、打刻を押してから帰るまでのあいだに、必ず何かが起きる。それだけの話だ。</p>
+    <p>駐車場に出ると、風が冷たかった。一月の、乾いた、痛いような風だった。</p>
+    <p>車のドアを開けて、シートに座って、俺はしばらくエンジンをかけなかった。</p>
+    <p>これも、そのころの癖だった。一日の終わりに、車の中で、五分か十分、何もしない時間が必要だった。そうしないと、家に着いたときに、自分が誰なのか、うまく思い出せない気がした。</p>
+    <p>フロントガラスの向こうに、倉庫の非常灯が赤く点っていた。</p>
+    <p>俺は、今週何をしたかを思い出そうとした。</p>
+    <p>月曜。月曜は、たしか、朝礼で今月の誤出荷の件数を読み上げた。</p>
+    <p>火曜。火曜は……。</p>
+    <p>水曜。</p>
+    <p>木曜。</p>
+    <p>思い出せなかった。</p>
+    <p>思い出せない、というのは、正確ではない。何もなかったわけがない。俺は毎日十二時間ここにいたのだから、何かはあった。ただ、それが一つの塊になっていて、切り分けられなかった。長い灰色の帯みたいなものが、月曜から金曜まで、ずっと続いている。その帯のどこにも、俺の記憶が引っかかる出っ張りがなかった。</p>
+    <p>まあ、そんなもんだろうと思った。</p>
+    <p>誰だってそうだ。四十近い男が、平日の記憶をいちいち覚えていてどうする。</p>
+    <p>俺はエンジンをかけた。</p>
+    <p>家までは、車で二十分だった。</p>
+    <p>アパートは築二十五年の二階建てで、俺の部屋は一階の角だった。離婚してからずっとここにいる。三年になる。</p>
+    <p>玄関を開けて、電気をつけて、上着をハンガーにかけた。</p>
+    <p>台所に行って、冷蔵庫を開けた。</p>
+    <p>中段に、プリンが二つ入っていた。</p>
+    <p>スーパーの、四つで二百八十円くらいの、いちばん安いやつだ。プラスチックの容器が四つ繋がっていて、そのうち二つが切り離されて、残りの二つが入っていた。</p>
+    <p>俺は、しばらくそれを見ていた。</p>
+    <p>俺はプリンを食べない。甘いものが嫌いというわけではないが、自分で買う発想がない。この三年間、この冷蔵庫にプリンが入っていたことは、たぶん一度もなかった。</p>
+    <p>買った記憶がなかった。</p>
+    <p>でも、それはおかしなことではない。疲れているときに、スーパーで何を籠に入れたかなんて、覚えていない。俺は先週、卵と豆腐と食パンと、何かもう一つ買ったはずだった。その何かがプリンだったのかもしれない。</p>
+    <p>二つ切り離されているのは、俺が二つ食べたからだろう。</p>
+    <p>食べた記憶もなかったが、それも同じことだ。</p>
+    <p>俺は冷蔵庫を閉めて、風呂に湯を張った。</p>
+    <p>風呂に入って、缶ビールを一本飲んで、テレビをつけたまま眠った。</p>
+    <p>土曜の朝、九時に業者と会う約束だったので、目覚ましは七時にかけた。</p>
+    <p>その夜のことを、俺はいまでもよく覚えている。</p>
+    <p>プリンのことではない。</p>
+    <p>眠りに落ちる直前、俺は、ずいぶん久しぶりに、美結の顔を思い浮かべたのだ。</p>
+    <p>娘は十一歳になっていた。三月で小学五年生が終わる。</p>
+    <p>次に会えるのは、二月の第一土曜日だった。あと三週間ある。</p>
+    <p>三週間。長いな、と思った。</p>
+    <p>その、長い、という感覚が、その後の三ヶ月で、まったく違う意味を持つことになるとは、そのときの俺は思っていなかった。</p>
+  </div>
+  <p class="hint" aria-hidden="true">縦組みでは、本文は左へスクロールします</p>
+</section>
+
+<section class="chapter" id="ch02">
+  <h2 class="ch-head"><span class="ch-num">第二章</span><span class="ch-name">欠けている</span><span class="when">1月19日 月</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第二章 本文">
+    <p>一月十九日、月曜日。その日の昼に、沖田が妙なことを言った。</p>
+    <p>昼の休憩で、事務所の隅の折りたたみ机で、俺はコンビニのおにぎりを食べていた。沖田はカップ麺にお湯を入れながら、こっちを見ずに言った。</p>
+    <p class="ni">「そういえば羽鳥さん、先週の木曜、駅前にいましたよね」</p>
+    <p>俺は、おにぎりを飲み込んだ。</p>
+    <p class="ni">「駅前？」</p>
+    <p class="ni">「はい。ロータリーのとこ。夜中に。俺、飲みの帰りで、タクシー待ってて」</p>
+    <p class="ni">「木曜の夜中？」</p>
+    <p class="ni">「一時半とか、そのくらいですかね」</p>
+    <p class="ni">「人違いだろ」</p>
+    <p class="ni">「あー、そうですかね。車も似てたんで、てっきり」</p>
+    <p class="ni">「車？」</p>
+    <p class="ni">「羽鳥さんの、シルバーのやつ。ナンバーまでは見てないですけど」</p>
+    <p>俺は笑って、「どこにでもある車だよ」と言った。沖田も笑って、それで話は終わった。</p>
+    <p>でも、俺は笑いながら、背中のあたりが冷たくなっていた。</p>
+    <p>木曜の夜中の一時半に、俺が何をしていたか、思い出せなかったからだ。</p>
+    <p>寝ていたはずだ。木曜は日勤で、八時半には家に帰っている。飯を食って、風呂に入って、十一時には寝る。夜中に出かける理由がない。</p>
+    <p>でも「思い出せない」というのは、「していない」ということではない。</p>
+    <p>その日、俺は仕事のあいだじゅう、そのことを考えていた。</p>
+    <p>考えているうちに、自分がずっと前から、いくつかのことに気づかないふりをしていたのがわかってきた。</p>
+    <p>たとえば、給油の間隔だ。</p>
+    <p>俺の通勤は片道二十分、往復で二十四キロくらいだ。それ以外に車を使うのは、週末の買い物くらいで、月にせいぜい六百キロ。一回五千円ほどの給油を、月に三回もすれば足りる。</p>
+    <p>去年の秋から、それが四回になり、五回になっていた。</p>
+    <p>燃費が落ちたのだと思っていた。車は十年目だった。</p>
+    <p>たとえば、洗濯機の中身だ。</p>
+    <p>朝、洗濯機を開けると、入れた覚えのない靴下が入っていることが、たまにあった。俺は一日一足しか履かない。それが二足入っている朝が、月に何度かあった。</p>
+    <p>たとえば、玄関だ。</p>
+    <p>冬になってから、俺は朝、玄関のたたきが濡れていることに何度か気づいた。前の日は雨が降っていないのに。</p>
+    <p>全部、それ単体では何でもないことだった。人はたいてい、自分の生活を細かく監視していない。靴下が二足あれば、昨日も入れたんだったなと思う。それで終わる。</p>
+    <p>俺は仕事を終えて、車に乗って、スマートフォンを取り出した。</p>
+    <p>写真のアプリを開いた。</p>
+    <p>ここ半年ほど、写真なんて撮っていないつもりだった。撮るのは、故障した機器の型番とか、業者に見せる配管の写真とか、そういうものだけだ。</p>
+    <p>スクロールした。</p>
+    <p>現場の写真。伝票の写真。ホワイトボードの写真。</p>
+    <p>その合間に、それらとは明らかに違う写真が、混ざっていた。</p>
+    <p>夜だった。</p>
+    <p>街灯のオレンジ色の光と、その下の、コンクリートの階段。</p>
+    <p>次の一枚は、団地だった。四階か五階建ての、古い、細長い建物。ベランダが並んでいて、そのほとんどが暗い。</p>
+    <p>次の一枚は、その建物の、上のほうを見上げた写真。</p>
+    <p>窓が一つだけ、明るかった。</p>
+    <p>カーテンが引かれていて、そのカーテンの向こう側に、うっすらと部屋の光がある。それだけの写真だった。ピントも合っていなかった。手が震えていたのかもしれない。</p>
+    <p>俺は、その写真の情報を開いた。</p>
+    <p>撮影日時。金曜日、午前二時十四分。</p>
+    <p>木曜の夜が明けたばかりの時間だった。</p>
+    <p>そこから、俺は写真を遡っていった。</p>
+    <p>同じ場所の写真が、いくつもあった。</p>
+    <p>十二月。十一月。十月。九月。</p>
+    <p>いちばん古いものは、去年の八月だった。夏の夜で、写真には虫が写り込んでいた。</p>
+    <p>撮影日時は、全部、木曜の夜が明けた時間だった。午前一時台から、二時台。</p>
+    <p>三十枚以上あった。</p>
+    <p>俺は、スマートフォンを膝に置いて、暗い駐車場のフロントガラスを見ていた。</p>
+    <p>半年だ。</p>
+    <p>半年のあいだ、俺は毎週木曜日の夜中に、どこかへ行って、同じ建物を撮って、帰ってきていた。</p>
+    <p>そして、その一つも、覚えていなかった。</p>
+    <p>誰かに相談する、という考えが、まず浮かんだ。</p>
+    <p>次に、誰に、という問題が浮かんだ。</p>
+    <p>親は父も母も死んでいる。兄が名古屋にいるが、五年会っていない。会社の人間には言えるわけがない。設備の主任が「先週の記憶がありません」と言い出したら、明日からシフトに入れてもらえない。</p>
+    <p>友達というものが、俺にはもう、ほとんどなかった。</p>
+    <p>離婚してから、というより、離婚の前から、俺の生活には仕事しかなかった。</p>
+    <p>残るのは、志野だ。</p>
+    <p>元妻に電話をして、「俺、記憶が飛ぶんだ」と言う自分を想像した。志野が何と言うかも想像できた。彼女は黙って聞いて、それから、静かにこう言うだろう。</p>
+    <p class="ni">「美結には、会わせられないね」</p>
+    <p>俺は、スマートフォンをポケットに入れた。</p>
+    <p>病院に行こう、と思った。</p>
+    <p>それが、まともな判断だった。</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch03">
+  <h2 class="ch-head"><span class="ch-num">第三章</span><span class="ch-name">平日は開いていない</span><span class="when">1月20日 – 2月13日</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第三章 本文">
+    <p>病院に行こうと思ってから、実際に行くまでに、一ヶ月近くかかった。</p>
+    <p>理由は単純だ。</p>
+    <p>病院は、平日にやっている。</p>
+    <p>俺の勤務は、朝七時半から夜八時前後。心療内科の受付は、たいてい夕方六時に閉まる。半休を取れば行けるが、そのためには理由がいる。理由を言えば、何を言われるかわからない。</p>
+    <p>土曜日にやっているところを探した。</p>
+    <p>この市には、土曜の午前中だけ診ている心療内科が二つあった。一つは電話が繋がらなかった。もう一つは繋がって、こう言われた。</p>
+    <p class="ni">「初診ですと、いちばん早くて、三週間後の土曜日になります」</p>
+    <p class="ni">「三週間後」</p>
+    <p class="ni">「はい。二月十四日の、十一時十五分でしたらお取りできます」</p>
+    <p>俺は予約を入れた。</p>
+    <p>電話を切って、カレンダーを見た。</p>
+    <p>二月十四日。土曜日。</p>
+    <p>三週間。</p>
+    <p>三週間というのは、この三ヶ月で俺が何度も向き合うことになる単位だ。</p>
+    <p>人に何かがあったとき、たいていの人は「すぐに病院に行けばよかったのに」と言う。俺もそう思う。でも実際には、平日に働いている人間にとって、「すぐに」という選択肢は存在しない。存在しているのは、次の土曜と、その次の土曜と、そのまた次の土曜だけだ。</p>
+    <p>その、三つの土曜のあいだに、一週間が三回ある。</p>
+    <p>一週間というのは、長い。</p>
+    <p>その三週間のあいだに、美結との面会日が一度あった。それについては、あとで書く。</p>
+    <p>面会日を除いた、その三週間のことを、俺はほとんど覚えていない。</p>
+    <p>覚えていないというのは、比喩ではない。本当に覚えていない。</p>
+    <p>断片ならある。</p>
+    <p>二番ラインのモーターが焼けて、代替品が入るまで三日間、パートさんに手作業で仕分けをしてもらったこと。そのときに一人が「もう無理です」と言って泣いたこと。俺が謝ったこと。</p>
+    <p>本社から来た若い管理職が、稼働率の資料を見て「ここ、もう少し絞れませんか」と言ったこと。俺が「絞ると人が辞めます」と言って、相手が「なるほど」と言って、何も変わらなかったこと。</p>
+    <p>夜、家に帰って、風呂の湯を張るのを忘れて、シャワーだけ浴びて寝たこと。それが何日続いたか、わからないこと。</p>
+    <p>その全部が、順番のない断片として、頭の中に転がっている。</p>
+    <p>どれが火曜でどれが水曜だったかは、もうわからない。</p>
+    <p>俺は、木曜日を意識するようになった。</p>
+    <p>木曜の夜、俺は寝る前にスマートフォンの目覚ましを午前一時にセットした。</p>
+    <p>起きなかった。</p>
+    <p>というより、起きて、止めていた。翌朝、アラームの履歴を見ると、午前一時零分に停止した記録が残っていた。俺は止めた記憶がない。</p>
+    <p>次の木曜、俺は玄関の内側に椅子を置いて、その上に空き缶を積んだ。倒れれば音がする。</p>
+    <p>金曜の朝、空き缶は、きれいに床に並べられていた。</p>
+    <p>三段に積んであったものが、床に、一列に。</p>
+    <p>倒れたのではない。並べてあった。</p>
+    <p>俺はその前にしゃがみこんで、しばらく動けなかった。</p>
+    <p>誰かが部屋に入ってきているのではないか、という考えが、はじめて浮かんだ。</p>
+    <p>俺はその日の夜、鍵屋を呼んで、玄関の鍵を交換した。二万四千円かかった。</p>
+    <p>それでも、次の木曜の朝、玄関のたたきは濡れていた。</p>
+    <p>鍵は、新しいほうの鍵で開けられていた。</p>
+    <p>合鍵を作るには、鍵の現物がいる。現物を持っているのは、俺だけだ。</p>
+    <p>その週の金曜の夜、俺は車の走行距離メーターを写真に撮ることにした。</p>
+    <p>二月六日、金曜の夜、退勤時。八万二千四百三十一キロ。</p>
+    <p>二月七日、土曜の朝。八万二千四百三十一キロ。</p>
+    <p>同じ日の夜。八万二千四百六十一キロ。美結に会いに行った往復のぶんだ。</p>
+    <p>日曜の夜。八万二千四百八十五キロ。買い物に行ったぶんだ。</p>
+    <p>月曜の夜。八万二千五百九キロ。通勤ぶん。</p>
+    <p>火曜の夜。八万二千五百三十三キロ。</p>
+    <p>水曜の夜。八万二千五百五十七キロ。</p>
+    <p>木曜の夜。八万二千五百八十一キロ。</p>
+    <p>二月十三日、金曜の朝。</p>
+    <p>八万二千六百三十九キロ。</p>
+    <p>五十八キロ。</p>
+    <p>寝てから起きるまでのあいだに、俺の車は、五十八キロ走っていた。</p>
+    <p>往復で五十八キロなら、片道二十九キロ。</p>
+    <p>俺はスマートフォンの地図を開いて、家を中心に、二十九キロの円を頭の中に描いた。</p>
+    <p>円の上に、一つ、心当たりがあった。</p>
+    <p>志野と美結が住んでいる団地は、この家から、車で四十分だ。</p>
+    <p>距離にして、だいたい、三十キロくらいだった。</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch04">
+  <h2 class="ch-head"><span class="ch-num">第四章</span><span class="ch-name">二月七日</span><span class="when">2月7日 土</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第四章 本文">
+    <p>面会は、月に一度、第一土曜日と決まっていた。</p>
+    <p>離婚のとき、志野が提案した条件で、俺はそれに同意した。争わなかった。争う材料が、俺のほうになかった。</p>
+    <p>三年前、家庭裁判所で調停委員に「別居の原因は何ですか」と訊かれたとき、俺は答えられなかった。浮気があったわけでも、暴力があったわけでもない。金の問題でもない。</p>
+    <p>志野が書いた申立書には、こう書いてあった。</p>
+    <p class="ni">「夫は、家にいない時間が長く、いるときも家にいないような状態が続いた」</p>
+    <p>読んで、俺は反論しなかった。反論のしようがなかった。事実だったからだ。</p>
+    <p>俺が家にいた時間は、たしかに短かった。そして、いた時間の俺は、たぶん、そこにいなかった。</p>
+    <p>二月七日は、晴れていたが、風の強い日だった。</p>
+    <p>待ち合わせは、市境の国道沿いのファミリーレストランの十一時。志野の家からも、俺の家からも、車で二十分くらいの場所だ。</p>
+    <p>俺が着いたとき、二人はもう来ていて、窓際のボックス席に座っていた。</p>
+    <p class="ni">「おそい」</p>
+    <p>と、美結が言った。</p>
+    <p class="ni">「五分前だぞ」</p>
+    <p class="ni">「お母さんは二十分前に来た」</p>
+    <p class="ni">「お母さんは早すぎる」</p>
+    <p>志野が、メニューから顔を上げずに、「そうね」と言った。</p>
+    <p>志野は、三年で少し痩せていた。髪を短くしていて、それが似合っていた。医療事務の仕事に戻って、いまは市民病院にいると聞いていた。</p>
+    <p>俺たちは、こういうとき、驚くほど普通に話せた。夫婦だったころのほうが、よほど話せなかった。</p>
+    <p>美結はハンバーグのセットを頼み、俺は日替わりを頼み、志野はドリンクバーだけを頼んだ。</p>
+    <p class="ni">「食べないのか」</p>
+    <p class="ni">「お昼、家で食べる。買い物あるし」</p>
+    <p>それが、いつもの流れだった。志野は最初の三十分だけ同席して、それから買い物に行って、二時半ごろ戻ってくる。そのあいだ、俺と美結は二人になる。</p>
+    <p>その日も、志野は三十分で立ち上がった。</p>
+    <p class="ni">「じゃ、二時半にね」</p>
+    <p class="ni">「うん」</p>
+    <p class="ni">「美結、迷惑かけないでよ」</p>
+    <p class="ni">「かけないよ」</p>
+    <p class="ni">「羽鳥さん」</p>
+    <p>志野は俺のことを、そう呼ぶようになっていた。名前で呼ばれなくなったのはいつからだろう、と、たまに考える。</p>
+    <p class="ni">「ちょっと痩せた？」</p>
+    <p class="ni">「そうかな」</p>
+    <p class="ni">「顔色、悪いよ」</p>
+    <p class="ni">「忙しいだけ」</p>
+    <p class="ni">「そう」</p>
+    <p>志野は、それ以上は訊かなかった。彼女はそういう人だ。訊いて、答えが返ってこないことを、この人はもう十分に経験している。</p>
+    <p>志野が出ていくと、美結はすぐにしゃべりはじめた。</p>
+    <p>この子は母親の前ではあまりしゃべらない。俺と二人になると、堰を切ったようにしゃべる。学校のこと、友達のこと、担任の先生が野球の話ばかりすること、給食のこと。</p>
+    <p>俺はほとんど聞き役だった。それでよかった。この一ヶ月で、俺がいちばん耳を使う三時間だった。</p>
+    <p class="ni">「あとね、うちのマンション、猫が来るようになった」</p>
+    <p class="ni">「マンションって、あの団地のことか」</p>
+    <p class="ni">「団地って言わないで。マンションでいいじゃん」</p>
+    <p class="ni">「エレベーター、ないんだろ」</p>
+    <p class="ni">「ないけど、マンションはマンション」</p>
+    <p class="ni">「五階まで階段なのは、団地って言うんだよ」</p>
+    <p class="ni">「言わないの」</p>
+    <p>俺は笑った。</p>
+    <p class="ni">「で、猫は」</p>
+    <p class="ni">「白と黒の。三号棟の階段のとこにいる」</p>
+    <p class="ni">「餌やってるのか」</p>
+    <p class="ni">「やってない。お母さんがだめって言うから。でも、たまに、見てるだけ」</p>
+    <p class="ni">「見てるだけか」</p>
+    <p class="ni">「うん。見てるだけならタダだから」</p>
+    <p>十一歳の子どもが言うことではないな、と思った。同時に、この子がそういうことを言う環境を作ったのは俺だ、とも思った。</p>
+    <p>デザートに、美結はプリンを頼んだ。</p>
+    <p>ファミレスのプリンは、ガラスの器に入っていて、生クリームとさくらんぼが乗っていた。</p>
+    <p class="ni">「プリン、好きなのか」</p>
+    <p class="ni">「好きだよ」</p>
+    <p class="ni">「そうだったっけ」</p>
+    <p class="ni">「そうだよ。ずっと前から」</p>
+    <p>彼女はスプーンでカラメルのところをすくって、それを先に食べた。上から順番ではなく、下のいちばん苦いところから食べる。</p>
+    <p class="ni">「変な食べ方だな」</p>
+    <p class="ni">「おいしいところを最後に取っとくの」</p>
+    <p class="ni">「俺は先に食う派だな」</p>
+    <p class="ni">「知ってる」</p>
+    <p>知ってる、と美結は言った。</p>
+    <p>俺は一瞬、それに引っかかった。</p>
+    <p>俺がプリンをどう食べるかを、この子はどこで見たのだろう。一緒に暮らしていたのは、この子が八歳までだ。</p>
+    <p>でも、そんなことは、いくらでもある。八歳の記憶は残る。俺だって、自分の父親が味噌汁に必ず七味を入れていたことを覚えている。</p>
+    <p>二時半に志野が戻ってきた。</p>
+    <p>会計を済ませて、三人で駐車場に出た。風が強くて、美結の前髪がめちゃくちゃになっていた。</p>
+    <p class="ni">「じゃあ、また来月な」</p>
+    <p class="ni">「うん」</p>
+    <p>美結は母親の車の助手席のドアに手をかけて、それから振り返った。</p>
+    <p class="ni">「お父さん」</p>
+    <p class="ni">「ん」</p>
+    <p class="ni">「またもく——」</p>
+    <p>言いかけて、彼女は止まった。</p>
+    <p>止まって、口を閉じて、それから、言い直した。</p>
+    <p class="ni">「……また、来月ね」</p>
+    <p class="ni">「おう」</p>
+    <p>俺は手を上げた。</p>
+    <p>志野の車が国道に出て、右にウインカーを出して、行ってしまった。</p>
+    <p>俺は駐車場で、そのまま少し立っていた。</p>
+    <p>またもく。</p>
+    <p>いま、そう聞こえた。</p>
+    <p>風の音だったのかもしれない。「また来月」と言おうとして、言葉が転んだだけかもしれない。子どもはよく言い間違える。</p>
+    <p>俺は車に乗って、エンジンをかけて、しばらく何もしなかった。</p>
+    <p>そして、その日の夜、俺は冷蔵庫に紙を貼った。</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch05">
+  <h2 class="ch-head"><span class="ch-num">第五章</span><span class="ch-name">冷蔵庫の紙</span><span class="when when-y">2月7日 – 2月13日</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第五章 本文">
+    <p>メモ用紙は、会社から持って帰ってきた在庫管理用の付箋だった。大きめの、黄色いやつだ。</p>
+    <p>俺はそれに、油性のペンで書いた。</p>
+    <p class="ni">『木曜の夜、どこへ行っている』</p>
+    <p>冷蔵庫の扉の、目の高さに貼った。</p>
+    <p>馬鹿げていると思った。</p>
+    <p>自分で書いて、自分で読むのだ。手紙というのは、他人に届くから手紙なので、これはただの独り言だった。</p>
+    <p>でも、俺には他に方法がなかった。</p>
+    <p>もし本当に、木曜の夜中に動いている俺がいるのなら、そいつは、俺が寝ているあいだにこの部屋を歩き、この冷蔵庫を開ける。だとしたら、この紙は、そいつの目に入る。</p>
+    <p>その週の月曜から水曜まで、紙はそのままだった。</p>
+    <p>俺は毎朝、台所に入るのが少しこわかった。</p>
+    <p>二月十二日、木曜日。</p>
+    <p>俺はいつも通り、八時半に帰って、飯を食って、風呂に入って、十一時に布団に入った。</p>
+    <p>わざと、いつも通りにした。何かを構えていると、あいつは動かないような気がした。あいつ、という言い方を、俺はそのころ、頭の中で使うようになっていた。</p>
+    <p>目が覚めたのは、朝の六時だった。</p>
+    <p>枕元のスマートフォンを取って、時間を見た。金曜日、二月十三日、六時二分。</p>
+    <p>布団から出た。</p>
+    <p>廊下は冷たかった。台所の電気をつける前に、玄関を見た。</p>
+    <p>たたきが、濡れていた。</p>
+    <p>俺は台所の電気をつけた。</p>
+    <p>冷蔵庫の扉に、黄色い付箋が二枚、貼ってあった。</p>
+    <p>一枚は俺が書いたやつだ。『木曜の夜、どこへ行っている』</p>
+    <p>その下に、もう一枚。</p>
+    <p>同じ黄色い付箋に、同じ油性ペンで、こう書いてあった。</p>
+    <p class="ni">『みにいった』</p>
+    <p>俺は、その四文字を、たぶん一分くらい見ていた。</p>
+    <p>字は、俺の字だった。</p>
+    <p>俺の字は、癖がある。「い」の二画目が、下に長く伸びる。会社の伝票でも、部下によく「羽鳥さんの字、見ればわかりますよ」と言われる。</p>
+    <p>その「い」が、二つとも、下に長く伸びていた。</p>
+    <p>ただ、俺の字より、少しだけ丸かった。</p>
+    <p>力の入り方が違う、という感じだった。急いで書いた字ではない。むしろ、ゆっくり、ていねいに書いた字だった。</p>
+    <p>俺は、その付箋を剥がして、手のひらに乗せた。</p>
+    <p>軽かった。</p>
+    <p>当たり前だが、紙の重さしかなかった。</p>
+    <p>俺は台所の床に座り込んで、両手で顔を覆った。</p>
+    <p>こわい、と思った。</p>
+    <p>でも、その「こわい」の中に、いま思えば、別のものが少し混じっていた。</p>
+    <p>返事が来た、ということだ。</p>
+    <p>半年のあいだ、俺の中の誰かが、俺の知らないところで動いていた。そいつは、はじめて俺に返事をした。</p>
+    <p>俺は付箋を捨てなかった。</p>
+    <p>かわりに、新しい紙を貼った。</p>
+    <p class="ni">『何を見に行っている』</p>
+    <p>その日、俺は仕事にならなかった。</p>
+    <p>二番ラインの点検表に、日付を二回書き間違えた。沖田が「羽鳥さん、大丈夫ですか」と訊いてきて、俺は「寝てないだけ」と答えた。嘘ではなかった。</p>
+    <p>明日は土曜日だった。</p>
+    <p>二月十四日。十一時十五分。心療内科の初診。</p>
+    <p>三週間、待った。</p>
+    <p>やっと、明日だった。</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch06">
+  <h2 class="ch-head"><span class="ch-num">第六章</span><span class="ch-name">土曜の診察室</span><span class="when">2月14日 土・午前</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第六章 本文">
+    <p>クリニックは、駅前の雑居ビルの三階にあった。</p>
+    <p>エレベーターを降りると、待合室に十人くらいいた。土曜の午前中だけしか開いていないのだから、そうなるだろう。半分は俺と同じくらいの年の男で、半分は若い女の人と、年配の人だった。</p>
+    <p>みんな、静かだった。</p>
+    <p>順番を待ちながら、俺は問診票を書いた。</p>
+    <p>主な症状。いつからか。睡眠時間。飲酒。既往歴。</p>
+    <p class="ni">「主な症状」の欄に、何を書けばいいのかで、五分止まった。</p>
+    <p>結局、こう書いた。</p>
+    <p class="ni">『記憶のない時間がある。その間に外出していると思われる』</p>
+    <p>書いてしまうと、それは、思っていたよりずっと簡単な文章だった。</p>
+    <p>診てくれたのは、四十代くらいの女の先生だった。眼鏡をかけていて、話し方が早い。土曜の午前中に十人を診るには、早くないと無理なのだろう。</p>
+    <p class="ni">「羽鳥さん。書いてくださったこと、もう少し詳しく教えてください」</p>
+    <p>俺は話した。</p>
+    <p>半年ぶんの写真のこと。走行距離のこと。玄関の濡れたたたきのこと。空き缶が並べられていたこと。冷蔵庫の付箋のこと。</p>
+    <p>先生は、途中で一度もこちらを疑う顔をしなかった。</p>
+    <p>それが、ありがたかった。俺はここに来るまでの三週間、自分の話を誰かが信じてくれるところを、うまく想像できなかった。</p>
+    <p class="ni">「まず、確認させてください」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「その時間、車を運転していますね」</p>
+    <p class="ni">「……はい」</p>
+    <p class="ni">「事故は」</p>
+    <p class="ni">「ありません」</p>
+    <p class="ni">「傷は」</p>
+    <p class="ni">「車の傷は、たぶん、ないです」</p>
+    <p class="ni">「たぶん、ですね」</p>
+    <p class="ni">「はい」</p>
+    <p>先生は、カルテに何か書いた。</p>
+    <p class="ni">「羽鳥さん。いま考えられることは、いくつかあります」</p>
+    <p>先生は指を折った。</p>
+    <p class="ni">「ひとつは、解離性の症状。ストレスと睡眠不足が強いときに、意識と記憶が一時的に切り離される。まれですが、その状態で行動することがあります。羽鳥さんの話は、それにいちばん近い」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「ふたつめは、睡眠時の行動障害。いわゆる夢遊病ですが、大人の場合はレム睡眠行動障害という別のものが出ることもあります」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「みっつめは、てんかんの一部の型。意識のない状態で、複雑な動作をすることがあります」</p>
+    <p class="ni">「……車の運転も、ですか」</p>
+    <p class="ni">「あります」</p>
+    <p>俺は膝の上で手を握った。</p>
+    <p class="ni">「よっつめは、薬やお酒。羽鳥さん、飲みますか」</p>
+    <p class="ni">「缶ビール一本くらいです」</p>
+    <p class="ni">「睡眠薬は」</p>
+    <p class="ni">「飲んでません」</p>
+    <p class="ni">「わかりました。それで、ここからが大事なんですが」</p>
+    <p>先生は、はじめてこちらをまっすぐ見た。</p>
+    <p class="ni">「この四つを分けるには、検査がいります。脳波と、頭のMRIと、できれば一晩泊まっての睡眠検査。これは、うちではできません。大学病院に紹介状を書きます」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「ただ」</p>
+    <p>先生は、少し言葉を選んだ。</p>
+    <p class="ni">「これ、全部、平日です」</p>
+    <p>俺は、黙った。</p>
+    <p class="ni">「脳波は午前中の枠しかありません。MRIも平日。睡眠検査は一泊二日で、入るのは平日の夕方です。合わせて、少なくとも三日は、平日に休みを取ってもらう必要があります」</p>
+    <p class="ni">「三日」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「……検査だけで、ですか」</p>
+    <p class="ni">「検査だけで、です」</p>
+    <p>俺は、天井を見た。天井には、四角い蛍光灯のカバーがあって、中に虫の影がいくつか溜まっていた。</p>
+    <p>三日。</p>
+    <p>二番ラインのモーターが焼けたとき、俺は三日休まなかった。パートさんが泣いたとき、俺は休まなかった。この十四年、俺は年に五日も有給を使っていない。</p>
+    <p>使えないのではない。使う手続きの先にあるものが、こわいのだ。</p>
+    <p>俺が三日いなければ、誰かが三日ぶん多く働く。その誰かが辞める。辞めた穴を、俺が埋める。結局、俺の一週間が長くなる。</p>
+    <p class="ni">「先生」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「治りますか」</p>
+    <p class="ni">「治療はできます」</p>
+    <p>先生は、そう言った。「治ります」ではなかった。</p>
+    <p class="ni">「ただ、羽鳥さん。解離だった場合、薬で消える症状ではありません。原因は、たいてい、生活のほうにあります。睡眠時間、労働時間、それから、心の負荷。そこを変えないと、症状は変わりません」</p>
+    <p class="ni">「生活を変える」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「それが、いちばん難しいんですけど」</p>
+    <p class="ni">「知っています」</p>
+    <p>先生は、少し笑った。疲れた笑い方だった。この人も、たぶん、土曜の午前中まで働いている。</p>
+    <p class="ni">「羽鳥さん。今日は、睡眠のための薬を出します。それから、紹介状を書きます。予約は、ご自分で取ってください。取れたら、取れた日で会社と交渉してください。順番はそれで大丈夫です」</p>
+    <p class="ni">「わかりました」</p>
+    <p class="ni">「もうひとつ」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「ご家族に、話してください」</p>
+    <p>俺は答えなかった。</p>
+    <p class="ni">「一人暮らしですよね。夜中に、記憶のないまま車を運転している人が、一人で暮らしているというのは、いちばん危ない形です。何かあったとき、誰も気づけない」</p>
+    <p class="ni">「……離婚してます」</p>
+    <p class="ni">「お子さんは」</p>
+    <p class="ni">「います。十一歳。元の妻と」</p>
+    <p>先生は、ペンを置いた。</p>
+    <p class="ni">「羽鳥さん。これは、私の仕事の範囲を少し超える話ですが」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「その、夜中に行っている場所に、心当たりはありますか」</p>
+    <p>俺は、正直に答えた。</p>
+    <p class="ni">「あります」</p>
+    <p class="ni">「そこは、その、元の奥さんとお子さんの——」</p>
+    <p class="ni">「たぶん、そうです」</p>
+    <p>先生は、ゆっくりうなずいた。</p>
+    <p class="ni">「そうしたら、なおさら、話してください」</p>
+    <p class="ni">「話したら、会わせてもらえなくなるかもしれません」</p>
+    <p class="ni">「そうかもしれません」</p>
+    <p>この人は、嘘をつかない人だった。</p>
+    <p class="ni">「でも、黙っていて、あちらが先に気づいたら、もっと悪いことになります」</p>
+    <p>その通りだった。</p>
+    <p>俺は薬をもらって、紹介状を受け取って、次の予約を一ヶ月後の土曜に入れて、ビルを出た。</p>
+    <p>十二時を少し過ぎていた。</p>
+    <p>二月の、日射しの弱い、明るい昼だった。</p>
+    <p>俺は車に乗って、シートベルトを締めて、それから、ナビに住所を入れた。</p>
+    <p>志野と美結が住んでいる団地の住所は、養育費の振込の書類に書いてあったから、覚えていた。</p>
+    <p>三年間、一度も行ったことのない場所だった。</p>
+    <p>少なくとも、休日の俺は。</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch07">
+  <h2 class="ch-head"><span class="ch-num">第七章</span><span class="ch-name">割れた植木鉢</span><span class="when">2月14日 土・午後</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第七章 本文">
+    <p>二十九キロ、四十分だった。</p>
+    <p>途中で、駅前のロータリーを回った。北へ抜けるには、ここを通るのがいちばん早い。</p>
+    <p>沖田が見たのは、たぶん、本当に俺だったのだと思った。</p>
+    <p>国道をひたすら北に走って、川を二本渡って、市街地を抜けると、丘の斜面に、同じ形の建物が五棟並んでいるのが見えた。</p>
+    <p>昭和のおわりに建てられた、県営の団地だった。壁は塗り直されていて、思ったより古びていなかった。棟のあいだに桜の木が何本かあって、まだ裸だった。</p>
+    <p>俺は、来客用の駐車場に車を停めた。</p>
+    <p>車を降りて、しゃがんで、バンパーを見た。前も、後ろも、傷はなかった。</p>
+    <p>それだけのことで、少し息ができた。</p>
+    <p>歩いた。</p>
+    <p>一号棟から順に見ていった。二号棟の前を通って、三号棟の前に立ったとき、足が止まった。</p>
+    <p>写真の場所だった。</p>
+    <p>外階段の、コンクリートの手すり。その手すりの陰の角度。壁の、換気口の並び方。街灯の位置。</p>
+    <p>全部、あの写真のままだった。</p>
+    <p>夜と昼で色は違うのに、形が同じだった。俺は半年ぶん、三十枚以上のこの場所の写真を、頭に入れてしまっていた。</p>
+    <p>俺は、階段の下に立って、見上げた。</p>
+    <p>四階の、左から二番目の窓。</p>
+    <p>写真で、一つだけ明るかった窓だ。</p>
+    <p>いまはカーテンが開いていて、中は見えなかった。ベランダに、洗濯物が干してあった。子どものジャージと、大人のシャツと、タオル。</p>
+    <p>美結の家だった。</p>
+    <p>俺は、その下に立っている自分が、たまらなく嫌だった。</p>
+    <p>三年間、俺はここに来たことがなかった。来てはいけないと思っていたからだ。志野に住所を教えてもらったのは振込のためで、訪ねるためではない。</p>
+    <p>それなのに、俺は、毎週来ていた。</p>
+    <p>夜中の二時に。</p>
+    <p>自分の意志ではない、というのは、言い訳になるのだろうか。ならないだろう。動いていたのは俺の足で、運転していたのは俺の手だ。</p>
+    <p>俺は、その場を離れようとした。</p>
+    <p>離れようとして、視界の端に、それが入った。</p>
+    <p>外階段の下、コンクリートの三角形の隙間になっている場所に、植木鉢が置いてあった。</p>
+    <p>素焼きの、大きめの鉢だった。上のふちが欠けていて、ひびが真ん中まで入っている。中に土はなく、割れたところから枯れた草が少し出ていた。</p>
+    <p>その隙間は、外からはほとんど見えない場所だった。</p>
+    <p>俺は、そこにしゃがみこんだ。</p>
+    <p>膝を地面につけて、腕を伸ばして、鉢の中を覗いた。</p>
+    <p>中に、スーパーのビニール袋が入っていた。</p>
+    <p>二重にして、口を結んであった。</p>
+    <p>俺は、それを取り出した。</p>
+    <p>手が震えていた。寒さのせいだと思いたかったが、たぶん違った。</p>
+    <p>結び目をほどいた。</p>
+    <p>中に、紙が入っていた。</p>
+    <p>折りたたんだ、ノートの切れ端。何十枚もあった。輪ゴムで、二つの束にまとめてあった。</p>
+    <p>いちばん上の一枚を、俺は開いた。</p>
+    <p>鉛筆の、子どもの字だった。</p>
+    <div class="note letter">『おとうさんへ
+今週も 来てくれて ありがとう
+今週は、算数のテスト 82点でした
+みゆ』</div>
+    <p>俺は、階段の下のコンクリートに座り込んだ。</p>
+    <p>寒かった。二月の、日陰の、コンクリートだった。それでも立てなかった。</p>
+    <p>俺は、その紙をもう一度読んだ。</p>
+    <p>今週も。</p>
+    <p class="ni">「も」だった。</p>
+    <p>俺は、二つ目の束の輪ゴムを外した。</p>
+    <p>そちらは、字が違った。</p>
+    <p>俺の字だった。冷蔵庫の付箋にあったのと同じ、少し丸い、ゆっくり書かれた俺の字だった。</p>
+    <div class="note letter">『みゆへ
+82点 すごい
+カレーの日、食べすぎるな
+とうさん』</div>
+    <p>俺は、そこで、声を出さずに泣いた。</p>
+    <p>自分が何に泣いているのか、そのときはわからなかった。</p>
+    <p>いま思えば、たぶん、こうだ。</p>
+    <p>俺は半年間、娘に手紙を書いていた。</p>
+    <p>そして、その一通も、読んでいなかった。</p>
+    <p>どのくらいそうしていたか、わからない。</p>
+    <p>物音がして、顔を上げると、階段の下のほうに、猫がいた。</p>
+    <p>白と黒の、太った猫だった。</p>
+    <p>三段目のところに座って、こちらをじっと見ていた。逃げなかった。人に慣れている猫だった。</p>
+    <p>美結が言っていた猫だ。</p>
+    <p class="ni">「見てるだけ」の猫だ。</p>
+    <p>俺は、その猫を見返した。猫は、しばらくして、興味をなくしたように顔を洗いはじめた。</p>
+    <p>俺は、手紙の束を、持って帰りたかった。</p>
+    <p>でも、持って帰ったら、美結が困る。次に来たときに、袋がなくなっている。彼女は、何が起きたのかわからないまま、待つことになる。</p>
+    <p>俺はスマートフォンを取り出して、一枚ずつ、写真を撮った。</p>
+    <p>手が震えて、何枚かはぶれた。撮り直した。全部で六十四枚あった。美結のものが三十二枚、俺のものが三十二枚。</p>
+    <p>撮り終えて、俺は紙を元通りに折って、輪ゴムで留めて、袋に入れて、口を二重に結んで、植木鉢の中に戻した。</p>
+    <p>鉢の位置も、覚えていた通りに直した。</p>
+    <p>立ち上がって、もう一度、四階の窓を見上げた。</p>
+    <p>洗濯物が、風で少し揺れていた。</p>
+    <p>俺は、車に戻った。</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch08">
+  <h2 class="ch-head"><span class="ch-num">第八章</span><span class="ch-name">半年ぶんの手紙</span><span class="when when-y">2月14日 土・夜</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第八章 本文">
+    <p>家に帰って、俺は炬燵の上にスマートフォンを置いて、六十四枚の写真を、日付順に並べていった。</p>
+    <p>手紙には日付が書いてあるものと、ないものがあった。ないものは、前後の内容から順番を推測した。</p>
+    <p>半年分を読み終えるのに、四時間かかった。</p>
+    <p>いちばん古いのは、俺のほうだった。</p>
+    <div class="note letter">『みゆへ
+とうさんです。
+このかべの下に、ときどき紙をおいていきます。
+よみたくなければ、すててください。
+とうさん』</div>
+    <p>紙は、コンビニのレシートの裏だった。</p>
+    <p>その次の、美結の一枚目。</p>
+    <div class="note letter">『だれかが階だんの下に手紙をおいていきました。
+おとうさんだというけど、しんじられません。
+しょうこを書いてください。』</div>
+    <p>俺は、この一行に少し笑った。</p>
+    <p>この子は慎重な子だ。それは母親に似ている。</p>
+    <div class="note letter">『みゆへ
+証拠。
+おまえは五歳のとき、水族館でペンギンに靴をかまれた。
+とうさんが「かめ」と言ったら、おまえは三日間、ペンギンをかめと呼んだ。
+とうさん』
+『おとうさんへ
+しんじます。
+でも、そのはなしは、もうしないでください。
+みゆ』</div>
+    <p>九月に入って、美結の手紙の調子が変わった。</p>
+    <div class="note letter">『おとうさんへ
+なんで、夜なんですか。
+なんで、インターホンをおさないんですか。
+おかあさんは、おこらないと思います。たぶん。
+みゆ』
+『みゆへ
+とうさんは、夜しか来られない。
+昼は、しごとをしている。
+インターホンは、おしてはいけない気がする。
+うまく言えない。すまない。
+とうさん』
+『おとうさんへ
+おかあさんに言っていいですか。
+みゆ』
+『みゆへ
+言わないでほしい。
+言うと、たぶん、来られなくなる。
+とうさん』</div>
+    <p>この「来られなくなる」を読んだとき、俺は炬燵の天板を、一度だけ叩いた。</p>
+    <p>卑怯だと思ったからだ。</p>
+    <p>十一歳の子どもに、母親に黙っていろと言う男が、俺の中にいた。それは、いちばんやってはいけないことだった。</p>
+    <p>でも、その次の一枚を読んで、俺は黙った。</p>
+    <div class="note letter">『おとうさんへ
+言いません。
+でも、一つだけ、やくそくしてください。
+わたしが、もういいですと言ったら、来ないでください。
+みゆ』
+『みゆへ
+やくそくする。
+とうさん』</div>
+    <p>この子は、自分の身の守り方を知っていた。</p>
+    <p>十一歳で、それを知っているというのは、いいことなのか悪いことなのか、俺にはわからなかった。</p>
+    <p>十月から、手紙は落ち着いた。</p>
+    <p>週に一往復。木曜に俺が置いて、土曜か日曜に美結が取って、返事を置く。次の木曜に俺がそれを取って、また置く。</p>
+    <p>内容は、驚くほど、なんでもないことだった。</p>
+    <div class="note letter">『おとうさんへ
+運動会がおわりました。リレーは三位でした。
+わたしは第二そうしゃで、ぬかれました。
+でも、たおれなかったので、よかったと思っています。
+みゆ』
+『みゆへ
+たおれないのは、たいせつ。
+とうさんも、たおれないようにしている。
+とうさん』
+『おとうさんへ
+三号とうの階だんに、ねこが来るようになりました。
+白と黒です。おかあさんはエサをやるなと言います。
+だから、見ているだけです。
+名前をつけました。「たれ」です。目のところが、たれているので。
+みゆ』
+『みゆへ
+たれに会った。
+夜も、いた。
+こっちを見ていた。
+とうさん』
+『おとうさんへ
+たれは、夜もいるんですね。
+わたしは、夜のたれを知りません。
+なんか、ずるいです。
+みゆ』</div>
+    <p>十二月の手紙で、俺は息が止まった。</p>
+    <div class="note letter">『おとうさんへ
+しつもんがあります。
+この前のファミレスのとき、おとうさんは、手紙のはなしをしませんでした。
+わたしが「またもく」と言いかけたとき、おとうさんは、へんな顔をしました。
+わからない、という顔でした。
+夜のおとうさんと、昼のおとうさんは、ちがう人ですか。
+みゆ』</div>
+    <p>俺は、次の紙を開いた。</p>
+    <p>俺の字だった。</p>
+    <div class="note letter">『みゆへ
+ちがう人ではない。
+でも、昼のとうさんは、これを知らない。
+とうさんにも、うまく説明ができない。
+昼のとうさんは、まいにち、へとへとになるまで働いている。
+だから、夜のとうさんが、かわりにここへ来る。
+そういうことだと、思っている。
+とうさん』
+『おとうさんへ
+昼のおとうさんに、教えてあげたほうがいいですか。
+みゆ』
+『みゆへ
+教えなくていい。
+知らないほうが、らくなこともある。
+とうさん』</div>
+    <p>俺は、その紙の写真を、長いこと見ていた。</p>
+    <p>あいつは、知っていた。</p>
+    <p>俺が知らないことを、あいつは全部知っていた。俺が存在することも、俺が疲れていることも、俺がこれを読まないことも。</p>
+    <p>そのうえで、あいつは俺に黙っていた。</p>
+    <p>冷蔵庫の付箋に、はじめて『みにいった』と書いたのは、俺が訊いたからだ。訊かなければ、あいつは死ぬまで黙っていたのだと思う。</p>
+    <p>一月の手紙に、それはあった。</p>
+    <div class="note letter">『みゆへ
+プリンを買った。四つ入り。
+二つ置いていく。
+寒いから、朝までもつと思う。
+のこりは、うちの冷蔵庫に入れておく。
+とうさん』
+『おとうさんへ
+プリン、食べました。
+おいしかったです。
+おとうさんも、食べましたか。
+みゆ』
+『みゆへ
+食べた。
+昼のとうさんは、たぶん、自分が食べたと思っている。
+思わせておけばいい。
+同じものを食べたことに、かわりはない。
+とうさん』</div>
+    <p>俺は、冷蔵庫を開けた。</p>
+    <p>空だった。プリンは、とっくにない。</p>
+    <p>あの金曜の夜、俺は冷蔵庫の中の二つのプリンを見て、自分が買ったことも食べたことも思い出せなくて、それでも「そんなものだろう」と思って、扉を閉めた。</p>
+    <p>その週末、三十キロ離れた団地で、俺の娘が、同じプリンを食べていた。</p>
+    <p>最後の三枚は、二月のものだった。</p>
+    <div class="note letter">『おとうさんへ
+二月七日に、ファミレスで会いました。
+昼のおとうさんは、やっぱり、なにも知りませんでした。
+わたしは、また、まちがえて「またもく」と言いそうになりました。
+みゆ』
+『みゆへ
+昼のとうさんに、気づかれそうになっている。
+気づかれたら、たぶん、夜のとうさんは、いなくなる。
+そうなったら、すまない。
+とうさん』</div>
+    <p>俺は、そこで手を止めた。</p>
+    <p>いなくなる。</p>
+    <p>あいつは、自分が消えることを、知っていた。</p>
+    <p>最後の一枚は、二月十三日のものだった。昨日だ。</p>
+    <p>美結の字だった。</p>
+    <div class="note letter">『おとうさんへ
+いなくなってもいいです。
+そのかわり、おねがいがあります。
+こんどのお休みの日に、昼のおとうさんに会いたいです。
+夜じゃなくて。
+団地の下じゃなくて。
+ちゃんと、あかるいところで。
+みゆ』</div>
+    <p>俺は、その一枚を、何度も読んだ。</p>
+    <p>窓の外は、もう暗くなっていた。</p>
+    <p>俺は立ち上がって、冷蔵庫のところへ行った。</p>
+    <p>俺が朝に貼った付箋が、そのままそこにあった。</p>
+    <p class="ni">『何を見に行っている』</p>
+    <p>俺は、その下に、もう一枚貼った。</p>
+    <p>油性ペンを持って、少し考えて、それから書いた。</p>
+    <p class="ni">『読んだ。全部』</p>
+    <p>そして、その下に、もう一枚。</p>
+    <p class="ni">『ありがとう』</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch09">
+  <h2 class="ch-head"><span class="ch-num">第九章</span><span class="ch-name">木曜日を見る</span><span class="when when-y">2月16日 – 3月6日</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第九章 本文">
+    <p>その週、俺は動いた。</p>
+    <p>まず、月曜の朝いちばんで、センター長に面談を申し込んだ。</p>
+    <p>センター長は五十五歳の、無口な人だった。俺が「体調のことで、平日に三日、検査で休みをいただきたい」と言うと、彼はしばらく黙って、それから「三日でいいのか」と言った。</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「五日にしとけ。検査ってのは、延びる」</p>
+    <p>俺は、少し驚いた。</p>
+    <p class="ni">「あと、シフトは沖田に組ませろ。あいつ、そろそろやらせないと育たん」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「羽鳥」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「顔色が悪いのは、去年の夏からだぞ」</p>
+    <p>俺は、答えられなかった。</p>
+    <p>この人は、見ていたのだ。見ていて、何も言わなかった。俺だって、パートさんが泣くまで、その人が限界だと気づかなかった。人は、たいてい、そういうふうにできている。</p>
+    <p>大学病院の予約は、電話で二本かけて取れた。</p>
+    <p>脳波が三月三日の火曜、MRIが三月四日の水曜。睡眠検査は三月十一日から十二日の一泊。全部、平日だった。</p>
+    <p>紹介状を出して、休暇届を出して、書類が全部片づいたのが、二月の終わりだった。</p>
+    <p>その間も、木曜日は毎週来た。</p>
+    <p>二月十九日、二月二十六日。</p>
+    <p>俺は付箋を貼りつづけた。</p>
+    <p class="ni">『検査を受けることにした』</p>
+    <p class="ni">『みゆに、会いに行く。昼に』</p>
+    <p>返事は、そのつど、あった。</p>
+    <p class="ni">『わかった』</p>
+    <p class="ni">『たのむ』</p>
+    <p>三行以上の返事は、一度もなかった。</p>
+    <p>あいつは、疲れているようだった。</p>
+    <p>三月の面会は、七日の土曜のはずだった。</p>
+    <p>その週の水曜に、志野からメッセージが来た。仕事のシフトが変わったので、今月は流したい、という内容だった。俺は「わかった」とだけ返した。</p>
+    <p>正直に言えば、少しほっとした。</p>
+    <p>あの手紙を全部読んだあとで、まだ、あの子の顔をまっすぐ見られる気がしなかった。</p>
+    <p>三月五日、木曜日。</p>
+    <p>俺は、カメラを買った。</p>
+    <p>家電量販店で、一万二千円の、動体検知で撮りはじめる小さなやつだ。棚の上に置いて、台所と廊下と玄関が映る角度にセットした。</p>
+    <p>どうしても、見たかった。</p>
+    <p>自分がどんなふうに動いているのか。あいつが、どんな顔をしているのか。</p>
+    <p>その夜、俺はいつも通り十一時に布団に入って、いつも通り、朝六時に目が覚めた。</p>
+    <p>玄関のたたきは、濡れていた。</p>
+    <p>俺は、カメラの映像を、パソコンに移した。</p>
+    <p>最初の記録は、午前一時二分だった。</p>
+    <p>画面に、廊下が映っている。暗い。赤外線の映像だから、白黒で、目だけが光る。</p>
+    <p>布団のほうから、俺が出てくる。</p>
+    <p>起き上がり方は、ふつうだった。寝ぼけて壁にぶつかるようなことはない。むしろ、静かだった。俺が朝起きるときより、ずっと静かだった。</p>
+    <p>俺は台所に行って、電気をつけずに、冷蔵庫を開けた。</p>
+    <p>冷蔵庫の光で、顔が見えた。</p>
+    <p>俺の顔だった。</p>
+    <p>それは、間違いなく俺の顔だった。三十九歳の、無精髭の、目の下にくまのある、疲れた男の顔だった。</p>
+    <p>ただ、表情が違った。</p>
+    <p>言葉にするのが難しい。眉が、開いていた。口の端の力が、抜けていた。</p>
+    <p>あれは、休んでいる人間の顔だった。</p>
+    <p>俺は、この三年、鏡であんな顔を見たことがなかった。</p>
+    <p>映像の中の俺は、冷蔵庫の扉に貼ってある付箋を読んだ。</p>
+    <p>少し、うなずいた。</p>
+    <p>それから、引き出しからペンを取って、付箋に何か書いて、貼った。</p>
+    <p>靴下を履き替えた。それから服を着た。パーカーと、ジャンパーと、ジーンズ。ふだん俺が着ないほうの、古いパーカーだった。</p>
+    <p>洗濯機に靴下が二足入っている朝があった理由が、それでわかった。</p>
+    <p>玄関で、靴を履いた。</p>
+    <p>そして、そこで、動きが止まった。</p>
+    <p>映像の中の俺が、こちらを向いた。</p>
+    <p>カメラを、見た。</p>
+    <p>俺は、パソコンの前で息を止めた。</p>
+    <p>映像の中の俺は、玄関から戻ってきた。靴のまま、廊下に上がった。カメラのほうへ、まっすぐ歩いてきた。</p>
+    <p>棚の前に立った。顔が、画面いっぱいになった。</p>
+    <p>白黒の映像の中で、その目は、黒い穴みたいだった。</p>
+    <p>あいつは、しばらくカメラを見ていた。</p>
+    <p>それから、口を動かした。</p>
+    <p>音は録れていなかった。安いカメラで、マイクがついていない。</p>
+    <p>俺は、その部分を、二十回以上再生した。何度も止めて、コマ送りにした。</p>
+    <p>三文字か、四文字だった。</p>
+    <p>最初は「ま」の形だった。唇を閉じて、開く。</p>
+    <p>俺は、はじめ、「まかせろ」だと思った。</p>
+    <p>でも、口の形はそこで終わらなかった。もう少し続いていた。</p>
+    <p>二十七回目に、俺はわかった。</p>
+    <div class="note">だ・い・じょ・う・ぶ</div>
+    <p>あいつは、そう言っていた。</p>
+    <p>そして、口を閉じて、少しだけ、笑った。</p>
+    <p>笑ったというより、頬が動いた、という程度だった。</p>
+    <p>それから、あいつは背を向けて、玄関から出ていった。</p>
+    <p>次の記録は、午前四時三十八分。</p>
+    <p>あいつが帰ってきて、靴を脱いで、洗面所で手を洗って、パーカーを脱いで、布団に入った。</p>
+    <p>布団に入る前に、あいつは一度、台所のほうを見た。</p>
+    <p>それだけだった。</p>
+    <p>俺は、画面の前で、しばらく動かなかった。</p>
+    <p>外が明るくなってきていた。金曜の朝だった。あと一時間で、俺は家を出て、倉庫に行かなければならない。</p>
+    <p>俺は台所に行った。</p>
+    <p>冷蔵庫に、新しい付箋が貼ってあった。</p>
+    <p class="ni">『カメラは、やめてくれ』</p>
+    <p>その下に、もう一行あった。</p>
+    <p class="ni">『こわがらせて、すまん』</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch10">
+  <h2 class="ch-head"><span class="ch-num">第十章</span><span class="ch-name">三月の電話</span><span class="when">3月14日 土</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="第十章 本文">
+    <p>検査は、三日で終わった。</p>
+    <p>脳波は異常なし。MRIも異常なし。一泊の睡眠検査では、深い睡眠がほとんど出ていないことがわかったが、てんかんの波も、レム睡眠行動障害の所見も出なかった。</p>
+    <p>結果を聞いたのは、三月十四日の土曜、あのクリニックだった。</p>
+    <p class="ni">「羽鳥さん。器質的なものは、たぶん、ありません」</p>
+    <p>先生は、大学病院からの返事の紙を見ながら言った。</p>
+    <p class="ni">「では」</p>
+    <p class="ni">「解離性の症状、ということになります。診断名としては、解離性健忘と、遁走。遁走というのは、ある目的地に向かって移動する型のことです」</p>
+    <p class="ni">「治りますか」</p>
+    <p class="ni">「同じことを訊きますね」</p>
+    <p class="ni">「はい」</p>
+    <p>先生は、少し笑った。</p>
+    <p class="ni">「羽鳥さん。この一ヶ月で、睡眠時間、増えましたか」</p>
+    <p class="ni">「……三十分くらい」</p>
+    <p class="ni">「五時間ですか」</p>
+    <p class="ni">「五時間半です」</p>
+    <p class="ni">「六時間半まで持っていってください。それが最初の目標です」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「それから、いちばん大事なことを言います」</p>
+    <p>先生は、ペンを置いた。</p>
+    <p class="ni">「解離というのは、こころが、耐えられない部分を切り離す仕組みです。羽鳥さんの場合、切り離されているのは、たぶん、いちばん大事な部分です」</p>
+    <p class="ni">「大事な部分」</p>
+    <p class="ni">「お子さんに会いたいという気持ちです」</p>
+    <p>俺は、天井を見た。虫の影は、先月より少し増えていた。</p>
+    <p class="ni">「昼の羽鳥さんは、それを持っていると生きていけなかった。仕事を回して、養育費を払って、月に一度の面会で我慢する。そのためには、会いたい気持ちを、どこかに置いておかないといけなかった」</p>
+    <p class="ni">「……」</p>
+    <p class="ni">「置いた場所が、木曜日の夜だったんだと思います」</p>
+    <p>俺は、うなずいた。</p>
+    <p>それは、この半年で聞いたどの説明よりも、腑に落ちた。</p>
+    <p class="ni">「先生。あいつは、消えますか」</p>
+    <p class="ni">「あいつ」</p>
+    <p class="ni">「夜の、俺です」</p>
+    <p>先生は、少しのあいだ考えた。</p>
+    <p class="ni">「消えるかもしれませんし、消えないかもしれません。ただ、消えたほうがいいとは、私は思っていません」</p>
+    <p class="ni">「え」</p>
+    <p class="ni">「切り離されたものが、無理やり戻ってくると、人は壊れます。ゆっくり、昼の羽鳥さんが、その気持ちを持てるようになる。持てるようになったぶんだけ、夜の羽鳥さんの仕事が減る。そういう順番がいいんです」</p>
+    <p class="ni">「時間、かかりますか」</p>
+    <p class="ni">「かかります」</p>
+    <p>先生は、そう言った。</p>
+    <p>この人は、本当に、嘘をつかない人だった。</p>
+    <p>クリニックを出て、俺は車に乗って、志野の携帯にかけた。</p>
+    <p>三年間で、俺がこの番号にかけたのは、面会の日程を決めるときだけだった。それも、たいていはメッセージで済ませていた。</p>
+    <p>五回コールして、出た。</p>
+    <p class="ni">『はい』</p>
+    <p class="ni">「羽鳥です」</p>
+    <p class="ni">『……どうしたの』</p>
+    <p class="ni">「話したいことがある。今日、時間ある？」</p>
+    <p class="ni">『美結のこと？』</p>
+    <p class="ni">「俺のことだ。でも、美結にも関係する」</p>
+    <p>電話の向こうで、志野が黙った。</p>
+    <p class="ni">『三時に、団地の下の公園に来られる？』</p>
+    <p class="ni">「行ける」</p>
+    <p class="ni">『わかった』</p>
+    <p>その公園は、団地の敷地の端にあった。滑り台と、砂場と、ベンチが二つ。桜の木が三本あって、蕾がまだ固かった。</p>
+    <p>志野は、ベンチに座っていた。</p>
+    <p>俺は、隣ではなく、向かいの砂場のふちに腰を下ろした。</p>
+    <p>そして、全部話した。</p>
+    <p>半年ぶんの写真のこと。走行距離のこと。冷蔵庫の付箋のこと。植木鉢の手紙のこと。カメラの映像のこと。診断のこと。</p>
+    <p>途中で、志野は一度も口を挟まなかった。</p>
+    <p>話し終えて、俺は言った。</p>
+    <p class="ni">「気持ち悪いと思う。当然だと思う」</p>
+    <p>志野は、しばらく何も言わなかった。</p>
+    <p>それから、こう言った。</p>
+    <p class="ni">「知ってた」</p>
+    <p class="ni">「え」</p>
+    <p class="ni">「美結が、二月の終わりに言ってきた。お父さんが、夜、来てるって」</p>
+    <p>俺は、砂場のふちを握った。</p>
+    <p class="ni">「……あいつ、言ったのか」</p>
+    <p class="ni">「言った。泣きながら。お父さんに、来るなって言わなきゃいけないかもしれないって」</p>
+    <p class="ni">「そうか」</p>
+    <p class="ni">「わたし、その日、あなたに電話しようと思って、やめた」</p>
+    <p class="ni">「なんで」</p>
+    <p>志野は、はじめてこちらを見た。</p>
+    <p class="ni">「こわかったから」</p>
+    <p>彼女はそう言った。まっすぐに。</p>
+    <p class="ni">「あなたが、うちの下に毎週来てるって聞いて、こわかった。三年前のあなたなら、絶対にしないことだから。それをするようになったってことは、あなたの中で何かが壊れたってことでしょう。それが、こわかった」</p>
+    <p class="ni">「……ごめん」</p>
+    <p class="ni">「謝らないで。まだ途中だから」</p>
+    <p>志野は、少し息を吸った。</p>
+    <p class="ni">「でも、そのあと、美結が、手紙を見せてきたの」</p>
+    <p class="ni">「見せた？」</p>
+    <p class="ni">「あなたが書いたやつ。何枚か持ってた。あの子、ちゃんと、いいやつだけ選んで持ってきた」</p>
+    <p>俺は、下を向いた。</p>
+    <p class="ni">「読んで、わたし、変な気持ちになった」</p>
+    <p class="ni">「変な」</p>
+    <p class="ni">「あなた、あの手紙の中では、ちゃんとお父さんだった」</p>
+    <p>風が吹いて、砂場の砂が少し動いた。</p>
+    <p class="ni">「一緒に住んでたときのあなたは、うちにいなかった。いても、いなかった。わたしが話しかけても、返事が半分だった。美結が『お父さん』って呼んでも、聞こえてなかった。あれが三年続いて、わたしは無理になった」</p>
+    <p class="ni">「知ってる」</p>
+    <p class="ni">「でも、あの手紙のあなたは、返事してた。全部に。ちゃんと」</p>
+    <p>志野は、そこで少し笑った。笑って、それから、その笑いをすぐに引っ込めた。</p>
+    <p class="ni">「腹が立った」</p>
+    <p class="ni">「うん」</p>
+    <p class="ni">「なんで、いま、なんで、夜中にこっそりなら、できるのって」</p>
+    <p class="ni">「俺も、そう思う」</p>
+    <p class="ni">「そう思うだけじゃ困る」</p>
+    <p class="ni">「うん」</p>
+    <p>俺たちは、しばらく黙っていた。</p>
+    <p>滑り台のところで、小さい子が二人、順番を取り合っていた。母親らしい人が、スマートフォンを見ながら「順番でしょ」と言っていた。</p>
+    <p class="ni">「羽鳥さん」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「条件を三つ言う」</p>
+    <p class="ni">「はい」</p>
+    <p class="ni">「ひとつ。ちゃんと治療を続けて。通院の記録を、わたしに見せて」</p>
+    <p class="ni">「わかった」</p>
+    <p class="ni">「ふたつ。昼に来て。インターホンを押して。わたしがいるときに。月に一度じゃなくて、来られるときに」</p>
+    <p>俺は、顔を上げた。</p>
+    <p class="ni">「いいのか」</p>
+    <p class="ni">「よくない。でも、そうしないと、あなた、夜にしか来られなくなるでしょ」</p>
+    <p>そういう理屈だった。</p>
+    <p>志野は昔から、こういう理屈の立て方をする人だった。</p>
+    <p class="ni">「みっつめ」</p>
+    <p class="ni">「うん」</p>
+    <p class="ni">「夜のことは、やめてって言いたい。でも、あなた、止められるの？」</p>
+    <p>俺は、正直に答えた。</p>
+    <p class="ni">「わからない」</p>
+    <p class="ni">「そうだよね」</p>
+    <p>志野は、うなずいた。</p>
+    <p>それから、桜の木のほうを見ながら、言った。</p>
+    <p class="ni">「じゃあ、あの植木鉢は、そのままにしとく」</p>
+    <p>俺は、彼女の横顔を見た。</p>
+    <p class="ni">「片づけないの？」</p>
+    <p class="ni">「片づけない」</p>
+    <p class="ni">「なんで」</p>
+    <p class="ni">「美結が、そうしてほしいって言ったから」</p>
+    <p>志野は立ち上がって、コートの裾を払った。</p>
+    <p class="ni">「わたしは、あなたのために置いとくんじゃない。あの子のために置いとく。そこは、間違えないで」</p>
+    <p class="ni">「間違えない」</p>
+    <p class="ni">「じゃあ」</p>
+    <p>彼女は歩きだして、三歩行って、止まった。</p>
+    <p class="ni">「羽鳥さん」</p>
+    <p class="ni">「うん」</p>
+    <p class="ni">「あの子、ずっと待ってたよ。夜も、昼も」</p>
+    <p>それだけ言って、志野は三号棟のほうへ歩いていった。</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch11">
+  <h2 class="ch-head"><span class="ch-num">エピローグ</span><span class="ch-name">短い休日</span><span class="when">4月4日 土</span></h2>
+  <div class="ch-body" tabindex="0" role="region" aria-label="エピローグ 本文">
+    <p>四月四日、土曜日。</p>
+    <p>桜が咲いていた。</p>
+    <p>団地の桜は、街の桜より少し遅い。丘の上で、風が抜けるからだと、あとで志野が言っていた。</p>
+    <p>俺は、来客用の駐車場に車を停めて、三号棟の前に立った。</p>
+    <p>外階段の下に、割れた植木鉢が、そのままあった。</p>
+    <p>俺は、そこにしゃがまなかった。</p>
+    <p>かわりに、階段を上った。</p>
+    <p>四階。左から二番目。表札は、志野の旧姓になっていた。</p>
+    <p>インターホンを押した。</p>
+    <p>押すのに、たぶん三十秒かかった。</p>
+    <p>中で音がして、ドアが開いた。</p>
+    <p class="ni">「はい」</p>
+    <p>美結だった。</p>
+    <p>髪を後ろで一つに結んでいて、パーカーを着ていて、靴下を履いていなかった。</p>
+    <p>俺を見て、彼女は、一瞬、固まった。</p>
+    <p>それから、後ろを向いて、大きな声で言った。</p>
+    <p class="ni">「お母さん！　昼のほう！」</p>
+    <p>俺は、笑ってしまった。</p>
+    <p>奥から志野の声がした。「上げていいよ」</p>
+    <p>美結は、ドアを大きく開けた。</p>
+    <p class="ni">「どうぞ」</p>
+    <p class="ni">「おじゃまします」</p>
+    <p>三年ぶりに、俺は娘の家に上がった。</p>
+    <p>狭い部屋だった。台所と、六畳と、四畳半。四畳半のほうに、美結の机とベッドがあった。壁に、時間割と、猫の写真が貼ってあった。白と黒の、目のたれた猫だった。</p>
+    <p>志野はコーヒーを二つ淹れて、一つを俺の前に置いて、自分の分を持って、台所の椅子に座った。距離の取り方が、ちょうどよかった。</p>
+    <p>美結は、俺の向かいに座って、しばらく黙っていた。</p>
+    <p>それから、言った。</p>
+    <p class="ni">「お父さん」</p>
+    <p class="ni">「ん」</p>
+    <p class="ni">「今日、覚えてる？」</p>
+    <p class="ni">「今日？」</p>
+    <p class="ni">「明日になったら、今日のこと、覚えてる？」</p>
+    <p>俺は、コーヒーを置いた。</p>
+    <p class="ni">「覚えてる」</p>
+    <p class="ni">「ほんと？」</p>
+    <p class="ni">「昼のことは、忘れたことない」</p>
+    <p class="ni">「じゃあ、夜は」</p>
+    <p class="ni">「夜は、覚えてない」</p>
+    <p>美結は、うなずいた。</p>
+    <p class="ni">「わたしね」</p>
+    <p class="ni">「うん」</p>
+    <p class="ni">「夜のお父さんに、ずっと、ありがとうって言いたかった」</p>
+    <p class="ni">「うん」</p>
+    <p class="ni">「でも、言えないんだよね。夜のお父さん、寝てるとき出てくるから」</p>
+    <p class="ni">「そうだな」</p>
+    <p class="ni">「だから、昼のお父さんに言う」</p>
+    <p>彼女は、まっすぐ俺を見た。</p>
+    <p class="ni">「ありがとう」</p>
+    <p>俺は、返事ができなかった。</p>
+    <p>台所で、志野がコーヒーをすする音がした。彼女はこちらを見ていなかった。見ないでいてくれた。</p>
+    <p>三時間いて、帰った。</p>
+    <p>帰り際、玄関で靴を履いていると、美結が言った。</p>
+    <p class="ni">「お父さん」</p>
+    <p class="ni">「ん」</p>
+    <p class="ni">「植木鉢、そのままにしといたよ」</p>
+    <p class="ni">「聞いた」</p>
+    <p class="ni">「入れといて。夜の分」</p>
+    <p class="ni">「……夜の分」</p>
+    <p class="ni">「うん。昼のお父さんは、こうやって来ればいいでしょ。だから、夜のお父さんのぶんは、まだ、そこにある」</p>
+    <p>俺は、うなずいた。</p>
+    <p>階段を降りて、俺は、外階段の下の三角形の隙間にしゃがんだ。</p>
+    <p>植木鉢の中に、ビニール袋があった。</p>
+    <p>中に、一枚だけ、紙が入っていた。</p>
+    <div class="note letter">『夜のおとうさんへ
+今日、昼のおとうさんが来ました。
+ちゃんと、インターホンをおしました。
+三時間いました。
+これは、あなたのおかげです。
+みゆ』</div>
+    <p>俺は、その紙を、袋に戻した。</p>
+    <p>それから、ポケットからメモ用紙を出して、書いた。</p>
+    <div class="note letter">『みゆへ
+昼のとうさんです。
+ここに書くのは、はじめてです。
+夜のとうさんによろしく。
+とうさん』</div>
+    <p>二枚を一緒に袋に入れて、口を結んで、鉢に戻した。</p>
+    <p>立ち上がると、階段の三段目に、白と黒の猫がいた。</p>
+    <p>目のところが、たれていた。</p>
+    <p class="ni">「たれ」は、俺を見て、逃げなかった。</p>
+    <p>家に帰ったのは、六時前だった。</p>
+    <p>俺は、冷蔵庫の前に立った。</p>
+    <p>付箋が、まだ何枚か貼ってある。俺のと、あいつのと。剥がさずに、そのまま重ねてきたので、少し分厚くなっていた。</p>
+    <p>新しい一枚を貼った。</p>
+    <p class="ni">『美結の家に上がった。三時間いた』</p>
+    <p>少し考えて、もう一枚。</p>
+    <p class="ni">『来週の木曜、行くなら、うちのプリンを持っていけ。二つ買ってある』</p>
+    <p>そして、最後にもう一枚。</p>
+    <p class="ni">『無理はするな』</p>
+    <p>書いてから、俺は少し笑った。</p>
+    <p>無理をするな、というのは、この半年、誰も俺に言わなかった言葉だった。</p>
+    <p>言う相手が、自分しかいないというのは、さびしいことだ。</p>
+    <p>でも、いないよりは、ずっといい。</p>
+    <p>その夜、俺は九時に布団に入った。</p>
+    <p>六時間半、眠るためだ。目標がある人間の眠り方というのを、俺は久しぶりに思い出していた。</p>
+    <p>診断はついた。薬はある。会社は五日くれた。志野は植木鉢を残してくれた。美結は、ありがとうと言った。</p>
+    <p>それでも、症状は消えていない。</p>
+    <p>睡眠時間は五時間半から六時間になっただけだ。倉庫は今日も回っていて、月曜になれば、また誤出荷の件数を読み上げなければならない。沖田がシフトを組むようになったが、彼はまだ下手で、そのぶん俺が直している。</p>
+    <p>俺の一週間は、あいかわらず長い。</p>
+    <p>たぶん、来年も長い。</p>
+    <p>目を閉じて、俺は、あの映像のことを考えた。</p>
+    <p>冷蔵庫の光に照らされた、俺の顔。眉の開いた、口の力の抜けた、休んでいる人間の顔。</p>
+    <p>あれは、俺のいちばんいい顔だった。</p>
+    <p>そして俺は、その顔を、一生、鏡では見られない。</p>
+    <p>自分の人生のいちばんいい時間に、俺は立ち会えないのだ。</p>
+    <p>それは、たぶん、ずっとこわいことだ。</p>
+    <p>でも、そのこわさの中で、俺の娘は、たしかに待たれている。</p>
+    <p>両方、本当なのだと思う。</p>
+    <p>枕元の時計が、九時二十分だった。</p>
+    <p>明日は日曜だ。</p>
+    <p>洗濯をして、掃除をして、飯を作って、夕方には、また一週間がはじまる。</p>
+    <p>短い休日が過ぎ、長い一週間が訪れる。</p>
+    <p>その真ん中に、木曜日がある。</p>
+    <p class="end">（了）</p>
+  </div>
+</section>
+</main>
+
+<footer class="colophon col">
+  <p class="work">短い休日</p>
+  <p>本作は創作であり、登場する人物・団体・出来事はすべて架空のものです。作中の症状の描写は物語のためのもので、医学的な記述ではありません。</p>
+  <p>執筆にあたり Anthropic の AI「Claude」を使用しています。構成・加筆・最終的な判断は作者によるものです。</p>
+  <p>&copy; Yusuke</p>
+</footer>
+
+<details class="bpwrap">
+  <summary><b>設計図 ── 人物相関・週の構造・年表・伏線</b><span>※ 結末まで含む重大なネタバレがあります</span></summary>
+<div class="bp">
+
+  <header class="masthead">
+    <div class="eyebrow">Story bible</div>
+    <h3 class="bp-title">木曜日の設計図</h3>
+    <p>羽鳥誠の三ヶ月を、人物の線・一週間の構造・手紙の経路・年表・モチーフの五つに分解したものです。日付はすべて作中の時間（二〇二六年一月〜四月）で、曜日は実カレンダーに合わせてあります。</p>
+    <div class="legend">
+      <span><i class="sw-h"></i>昼の羽鳥が知っていること</span>
+      <span><i class="sw-y"></i>夜の羽鳥だけが知っていること</span>
+      <span><i class="sw-b"></i>二人ぶんに起きたこと</span>
+    </div>
+  </header>
+
+  <!-- 01 人物相関 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><h4>人物相関</h4></div>
+    <p class="sec-note">中心にいるのは一人の男ですが、作中では二人として振る舞います。周囲の人物は全員、その二人のどちらか一方としか接触しません。誰が「昼」を見ていて、誰が「夜」を見ているか。それがこの図の主題です。</p>
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 940 520" role="img" aria-label="昼の羽鳥と夜の羽鳥を中心に、沖田・センター長・医師・志野・美結が配置された人物相関図">
+          <defs>
+            <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <rect x="286" y="190" width="368" height="118" rx="6" class="dash" fill="none" stroke="var(--faint)" stroke-width="1"/>
+          <text class="nm-s" x="470" y="174" text-anchor="middle">羽鳥 誠（39歳・物流センター設備保全主任）</text>
+
+          <line class="edge" x1="450" y1="108" x2="380" y2="212"/>
+          <text class="elab" x="466" y="152">土曜の午前しか行けない</text>
+
+          <line class="edge" x1="210" y1="138" x2="300" y2="224"/>
+          <text class="elab" x="188" y="180">「駅前にいましたよね」</text>
+
+          <line class="edge" x1="210" y1="346" x2="304" y2="284"/>
+          <text class="elab" x="216" y="322">「五日にしとけ」</text>
+
+          <line class="edge" x1="720" y1="220" x2="656" y2="240"/>
+          <text class="elab" x="716" y="174" text-anchor="end">元妻／養育費／三年</text>
+
+          <path class="edge" d="M762,252 C742,340 620,418 548,436"/>
+          <text class="elab" x="772" y="322">同居</text>
+
+          <line class="edge-h" x1="352" y1="282" x2="428" y2="410"/>
+          <text class="elab" x="340" y="356" text-anchor="end">月に一度の面会</text>
+          <text class="elab" x="340" y="374" text-anchor="end">（第一土曜）</text>
+
+          <line class="edge-y" x1="580" y1="282" x2="512" y2="410"/>
+          <text class="elab" x="600" y="356">毎週木曜の深夜</text>
+          <text class="elab" x="600" y="374">植木鉢の手紙</text>
+
+          <line class="edge-y" x1="440" y1="238" x2="500" y2="238" marker-end="url(#a1)" style="color:var(--yo)"/>
+          <line class="edge-h" x1="500" y1="262" x2="440" y2="262" marker-end="url(#a1)" style="color:var(--hi)"/>
+          <text class="elab-i" x="470" y="208" text-anchor="middle">冷蔵庫の付箋</text>
+
+          <g>
+            <rect class="node node-h" x="300" y="212" width="140" height="68" rx="3"/>
+            <text class="nm" x="370" y="240" text-anchor="middle">昼の羽鳥</text>
+            <text class="nm-s" x="370" y="260" text-anchor="middle">語り手／何も知らない</text>
+          </g>
+          <g>
+            <rect class="node node-y" x="500" y="212" width="140" height="68" rx="3"/>
+            <text class="nm" x="570" y="240" text-anchor="middle">夜の羽鳥</text>
+            <text class="nm-s" x="570" y="260" text-anchor="middle">全部を知っている</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="400" y="52" width="150" height="56" rx="3"/>
+            <text class="nm" x="475" y="76" text-anchor="middle">心療内科の医師</text>
+            <text class="nm-s" x="475" y="95" text-anchor="middle">「生活を変えないと変わりません」</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="60" y="110" width="150" height="56" rx="3"/>
+            <text class="nm" x="135" y="134" text-anchor="middle">沖田</text>
+            <text class="nm-s" x="135" y="153" text-anchor="middle">27歳・後輩</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="60" y="330" width="150" height="56" rx="3"/>
+            <text class="nm" x="135" y="354" text-anchor="middle">センター長</text>
+            <text class="nm-s" x="135" y="373" text-anchor="middle">55歳・見ていて黙っていた人</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="720" y="190" width="160" height="60" rx="3"/>
+            <text class="nm" x="800" y="216" text-anchor="middle">志野</text>
+            <text class="nm-s" x="800" y="235" text-anchor="middle">元妻・植木鉢を残す</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="395" y="410" width="150" height="62" rx="3"/>
+            <text class="nm" x="470" y="436" text-anchor="middle">美結</text>
+            <text class="nm-s" x="470" y="455" text-anchor="middle">11歳・両方を知っている</text>
+          </g>
+
+          <text class="elab-i" x="470" y="502" text-anchor="middle">夜の羽鳥は昼の羽鳥を知っている。昼の羽鳥は、夜の羽鳥を知らない。</text>
+        </svg>
+      </div>
+      <figcaption>沖田・センター長・医師・志野は「昼」としか会わない。美結だけが、二人ともと会っている唯一の人物で、しかも半年間、そのことを誰にも言わなかった。三号棟の階段にいる猫「たれ」も、昼と夜の両方に見られている。</figcaption>
+    </figure>
+  </section>
+
+  <!-- 02 一週間の構造 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><h4>一週間の構造</h4></div>
+    <p class="sec-note">冒頭の一文「長い一週間が過ぎ、短い休日が訪れる」を、そのまま図にしたものです。労働が五日ぶんの記憶を潰し、その潰れた場所に、木曜の深夜だけ別の行動が入り込みます。</p>
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 950 330" role="img" aria-label="月曜から日曜までの一週間を、昼の労働・記憶の欠落・木曜深夜の外出の三段で表した図">
+          <defs>
+            <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <text class="nm-s" x="155" y="36" text-anchor="middle">月</text>
+          <text class="nm-s" x="265" y="36" text-anchor="middle">火</text>
+          <text class="nm-s" x="375" y="36" text-anchor="middle">水</text>
+          <text class="nm-s" x="485" y="36" text-anchor="middle">木</text>
+          <text class="nm-s" x="595" y="36" text-anchor="middle">金</text>
+          <text class="nm-s" x="705" y="36" text-anchor="middle">土</text>
+          <text class="nm-s" x="815" y="36" text-anchor="middle">日</text>
+
+          <text class="nm-s" x="88" y="96" text-anchor="end">昼の羽鳥</text>
+          <rect class="node node-h" x="110" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="220" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="330" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="440" y="56" width="90" height="64" rx="2"/>
+          <rect class="node node-h" x="550" y="56" width="90" height="64" rx="2"/>
+          <text class="elab" x="375" y="94" text-anchor="middle">7:30 – 20:00　残業月60〜80時間</text>
+          <rect class="node node-n" x="660" y="76" width="90" height="44" rx="2"/>
+          <rect class="node node-n" x="770" y="76" width="90" height="44" rx="2"/>
+          <text class="elab" x="760" y="104" text-anchor="middle">短い休日</text>
+
+          <rect class="node node-n dash" x="110" y="134" width="530" height="20" rx="2"/>
+          <text class="elab" x="375" y="149" text-anchor="middle">長い灰色の帯 ── この五日ぶんの記憶が、切り分けられない</text>
+          <rect class="node node-n" x="660" y="134" width="200" height="20" rx="2"/>
+          <text class="elab" x="760" y="149" text-anchor="middle">覚えている</text>
+
+          <text class="nm-s" x="88" y="212" text-anchor="end">夜の羽鳥</text>
+          <rect class="node node-y" x="440" y="178" width="90" height="66" rx="2"/>
+          <text class="elab" x="485" y="202" text-anchor="middle">1:02 出発</text>
+          <text class="elab" x="485" y="234" text-anchor="middle">4:38 帰宅</text>
+
+          <line class="edge-y" x1="530" y1="204" x2="646" y2="204" marker-end="url(#a2)" style="color:var(--yo)"/>
+          <line class="edge-y dash" x1="646" y1="224" x2="530" y2="224" marker-end="url(#a2)" style="color:var(--yo)"/>
+          <text class="elab" x="588" y="196" text-anchor="middle">二十九キロ</text>
+          <text class="elab" x="588" y="244" text-anchor="middle">往復五十八キロ</text>
+
+          <rect class="node node-n" x="650" y="178" width="170" height="66" rx="3"/>
+          <text class="nm" x="735" y="204" text-anchor="middle">団地 三号棟</text>
+          <text class="nm-s" x="735" y="226" text-anchor="middle">四階の窓と、割れた植木鉢</text>
+
+          <text class="elab-i" x="475" y="290" text-anchor="middle">平日は病院が開いていない。土曜の午前だけが、彼が自分の異常にたどり着ける時間だった。</text>
+          <text class="elab" x="475" y="312" text-anchor="middle">それが、決意から受診まで一ヶ月かかった理由になっている。</text>
+        </svg>
+      </div>
+      <figcaption>玄関のたたきの濡れ、洗濯機の靴下二足、給油の回数、走行距離の五十八キロ。第二章と第三章で並べた小さな異常は、すべてこの図の「夜」の帯から出ている。</figcaption>
+    </figure>
+  </section>
+
+  <!-- 03 手紙の三角形 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><h4>手紙の三角形</h4></div>
+    <p class="sec-note">この物語には、言葉の受け渡し場所が二つあります。冷蔵庫の扉と、外階段の下の割れた植木鉢。どちらも、二人が同時に立ち会うことのない場所です。</p>
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 900 340" role="img" aria-label="夜の羽鳥を頂点に、昼の羽鳥と美結を底辺とする三角形。辺の上に冷蔵庫の付箋と割れた植木鉢がある">
+          <line class="edge-y" x1="230" y1="228" x2="290" y2="168"/>
+          <line class="edge-y" x1="368" y1="128" x2="440" y2="102"/>
+          <line class="edge-y" x1="540" y1="102" x2="612" y2="128"/>
+          <line class="edge-y" x1="690" y1="168" x2="748" y2="226"/>
+          <line class="edge-h dash" x1="232" y1="252" x2="676" y2="252"/>
+          <text class="elab" x="454" y="284" text-anchor="middle">月に一度の面会。ここでは、二人とも手紙の話をしない</text>
+
+          <g>
+            <rect class="node node-y" x="370" y="42" width="170" height="60" rx="3"/>
+            <text class="nm" x="455" y="68" text-anchor="middle">夜の羽鳥</text>
+            <text class="nm-s" x="455" y="88" text-anchor="middle">木曜 1:02 – 4:38</text>
+          </g>
+          <g>
+            <rect class="node node-h" x="60" y="222" width="172" height="60" rx="3"/>
+            <text class="nm" x="146" y="248" text-anchor="middle">昼の羽鳥</text>
+            <text class="nm-s" x="146" y="268" text-anchor="middle">語り手</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="676" y="222" width="172" height="60" rx="3"/>
+            <text class="nm" x="762" y="248" text-anchor="middle">美結</text>
+            <text class="nm-s" x="762" y="268" text-anchor="middle">11歳</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="216" y="124" width="152" height="46" rx="3"/>
+            <text class="nm" x="292" y="146" text-anchor="middle">冷蔵庫の付箋</text>
+            <text class="nm-s" x="292" y="163" text-anchor="middle">週に一往復</text>
+          </g>
+          <g>
+            <rect class="node node-n" x="536" y="124" width="152" height="46" rx="3"/>
+            <text class="nm" x="612" y="146" text-anchor="middle">割れた植木鉢</text>
+            <text class="nm-s" x="612" y="163" text-anchor="middle">半年で六十四枚</text>
+          </g>
+
+          <text class="elab-i" x="454" y="318" text-anchor="middle">終章で、この点線が実線になる ── 昼の羽鳥が、はじめてインターホンを押す。</text>
+        </svg>
+      </div>
+      <figcaption>付箋のやりとりは三行を超えない。植木鉢の手紙は、美結が三十二枚、夜の羽鳥が三十二枚で、ちょうど同数になっている。始まりは父の一枚目、終わりは娘の一枚。</figcaption>
+    </figure>
+  </section>
+
+  <!-- 04 年表 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><h4>年表</h4></div>
+    <p class="sec-note">前年の八月に手紙が始まり、一月に昼の羽鳥が気づき、四月に決着します。左が「昼が知っていること」、右が「夜だけが知っていて、あとから昼が読むこと」。</p>
+
+    <div class="tl">
+
+      <div class="band">
+        <div class="band-head"><b>前 年 — 誰も気づいていない半年</b></div>
+        <div class="ev y"><span class="d">8月・木曜</span><p>夜の羽鳥が、はじめて団地の下に紙を置く</p><em>コンビニのレシートの裏。「よみたくなければ、すててください」</em></div>
+        <div class="ev y"><span class="d">8月</span><p>美結が返事を書く。「しょうこを書いてください」</p><em>五歳のとき、ペンギンにかまれた話で証明される</em></div>
+        <div class="ev y"><span class="d">9月</span><p>「もういいですと言ったら、来ないでください」</p><em>十一歳が自分でつけた、たったひとつの約束</em></div>
+        <div class="ev h"><span class="d">秋</span><p>給油が月三回から四回、五回に増える</p><em>燃費が落ちたのだと思っていた</em></div>
+        <div class="ev y"><span class="d">12月</span><p>美結が気づく。「夜のおとうさんと、昼のおとうさんは、ちがう人ですか」</p></div>
+        <div class="ev y"><span class="d">12月</span><p>夜の羽鳥が答える。「昼のとうさんは、これを知らない」</p><em>この時点で、夜は昼の存在を把握している</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>1 月 — 気づく</b></div>
+        <div class="ev y"><span class="d">1月15日・木</span><p>プリンを四つ買い、二つを植木鉢に置く</p></div>
+        <div class="ev h"><span class="d">1月16日・金</span><p>冷蔵庫にプリンが二つ。自分が買った記憶がない</p><em>第一章。「そんなもんだろう」と思って扉を閉める</em></div>
+        <div class="ev h"><span class="d">1月19日・月</span><p>沖田の目撃証言／半年ぶんの写真を見つける</p><em>撮影日時は全部、木曜の夜が明けた時間</em></div>
+        <div class="ev h"><span class="d">1月20日ごろ</span><p>初診の予約。いちばん早くて三週間後の土曜</p></div>
+        <div class="ev h"><span class="d">1月22日 / 29日</span><p>目覚ましは自分で止められ、空き缶は床に並べられる</p><em>鍵を替えても、たたきは濡れている</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>2 月 — 確かめる</b></div>
+        <div class="ev b"><span class="d">2月6日 – 13日</span><p>走行距離を毎日記録する</p><em>木曜の夜から金曜の朝までに、五十八キロ</em></div>
+        <div class="ev h"><span class="d">2月7日・土</span><p>面会。別れ際、美結が「またもく——」と言いかけて飲み込む</p></div>
+        <div class="ev h"><span class="d">2月7日・夜</span><p>冷蔵庫に付箋を貼る。『木曜の夜、どこへ行っている』</p></div>
+        <div class="ev y"><span class="d">2月13日・金</span><p>返事がある。『みにいった』</p><em>自分の字。ただし、少しだけ丸い</em></div>
+        <div class="ev b peak"><span class="d">2月14日・土</span><p>午前、初診。午後、団地。<br>割れた植木鉢の中に、半年ぶんの手紙</p><em>その場で六十四枚を撮影し、袋を元に戻す</em></div>
+        <div class="ev h"><span class="d">同日・夜</span><p>四時間かけて全部読む</p><em>付箋に『読んだ。全部』『ありがとう』と書く</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>3 月 — 見る、話す</b></div>
+        <div class="ev h"><span class="d">2月16日・月</span><p>センター長に休暇を申し出る。「五日にしとけ」</p></div>
+        <div class="ev b"><span class="d">3月3日 – 12日</span><p>脳波・MRI・一泊の睡眠検査</p><em>器質的な異常は出ない</em></div>
+        <div class="ev b peak"><span class="d">3月5日・木</span><p>カメラに映った自分が、レンズに向かって<br>「だ・い・じょ・う・ぶ」と口を動かす</p><em>翌朝の付箋 ──『カメラは、やめてくれ』『こわがらせて、すまん』</em></div>
+        <div class="ev h"><span class="d">3月14日・土</span><p>診断。解離性健忘と遁走。「切り離されているのは、会いたい気持ちです」</p></div>
+        <div class="ev b"><span class="d">同日・午後</span><p>志野に全部話す。彼女はすでに美結から聞いていた</p><em>「じゃあ、あの植木鉢は、そのままにしとく」</em></div>
+      </div>
+
+      <div class="band">
+        <div class="band-head"><b>4 月 — 昼が、正面から来る</b></div>
+        <div class="ev b peak"><span class="d">4月4日・土</span><p>インターホンを押す。「お母さん！　昼のほう！」</p><em>三時間いて、帰る</em></div>
+        <div class="ev y"><span class="d">同日</span><p>植木鉢に、美結からの一枚<br>「これは、あなたのおかげです」</p></div>
+        <div class="ev h"><span class="d">同日</span><p>昼の羽鳥が、はじめて植木鉢に書く<br>「夜のとうさんによろしく」</p></div>
+        <div class="ev b"><span class="d">その夜</span><p>付箋 ──『来週の木曜、行くなら、うちのプリンを持っていけ』『無理はするな』</p><em>症状は消えていない。睡眠は五時間半から六時間になっただけ</em></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 05 モチーフ -->
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><h4>モチーフの往復</h4></div>
+    <p class="sec-note">七つの小道具を、「置く → 育てる → 回収する」の三段で通しています。どれも最初は生活のノイズとして出てきて、あとから証拠に変わります。</p>
+    <div class="tablebox">
+      <table>
+        <thead>
+          <tr><th>モチーフ</th><th>置く</th><th>育てる</th><th>回収する</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>プリン</td>
+            <td><span class="ch">第一章</span>冷蔵庫に二つ。買った記憶がない</td>
+            <td><span class="ch">第四章</span>ファミレスで美結が頼む。「知ってる」</td>
+            <td><span class="ch">第八章</span>「昼のとうさんは、自分が食べたと思っている」</td>
+          </tr>
+          <tr>
+            <td>玄関のたたき／靴下</td>
+            <td><span class="ch">第二章</span>濡れている。靴下が二足ある朝</td>
+            <td><span class="ch">第三章</span>鍵を替えても、新しい鍵で開けられる</td>
+            <td><span class="ch">第九章</span>映像の中で、靴下を履き替えてから出ていく</td>
+          </tr>
+          <tr>
+            <td>走行距離</td>
+            <td><span class="ch">第二章</span>給油が月三回から五回に</td>
+            <td><span class="ch">第三章</span>一週間、毎日メーターを撮る</td>
+            <td><span class="ch">第七章</span>二十九キロ、四十分。団地に着く</td>
+          </tr>
+          <tr>
+            <td>「またもく」</td>
+            <td><span class="ch">第四章</span>美結が言いかけて、飲み込む</td>
+            <td><span class="ch">第八章</span>十二月の手紙に、同じ場面が書かれている</td>
+            <td><span class="ch">エピローグ</span>「昼のほう！」と呼び分けられる</td>
+          </tr>
+          <tr>
+            <td>冷蔵庫の付箋</td>
+            <td><span class="ch">第五章</span>『木曜の夜、どこへ行っている』</td>
+            <td><span class="ch">第五・八章</span>『みにいった』『読んだ。全部』</td>
+            <td><span class="ch">エピローグ</span>『無理はするな』── 言う相手が自分しかいない</td>
+          </tr>
+          <tr>
+            <td>割れた植木鉢</td>
+            <td><span class="ch">第七章</span>外階段の下の、外から見えない隙間</td>
+            <td><span class="ch">第八章</span>半年ぶん、六十四枚</td>
+            <td><span class="ch">第十章</span>志野が「そのままにしとく」と言う</td>
+          </tr>
+          <tr>
+            <td>顔</td>
+            <td><span class="ch">第四章</span>志野に「顔色、悪いよ」と言われる</td>
+            <td><span class="ch">第九章</span>映像の中の自分は、眉が開いている</td>
+            <td><span class="ch">エピローグ</span>「あれは、俺のいちばんいい顔だった」</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 06 不穏さの設計 -->
+  <section>
+    <div class="sec-head"><span class="sec-num">06</span><h4>不穏さの設計</h4></div>
+    <p class="sec-note">超常現象は一度も起こりません。読者の不安は、次の五段階で上げてから、行き先を反転させています。</p>
+    <div class="tablebox">
+      <table>
+        <thead>
+          <tr><th>段</th><th>読者が疑うこと</th><th>そのために置いた事実</th><th>反転のさせ方</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>一</td><td>ただ疲れているだけだろう</td><td><span class="ch">第一・二章</span>プリン、靴下、給油、写真</td><td>単体では説明がつく範囲に抑える</td></tr>
+          <tr><td>二</td><td>誰かが部屋に入っている</td><td><span class="ch">第三章</span>空き缶が並べられている／鍵を替えても濡れている</td><td>合鍵の可能性を明示的に潰す</td></tr>
+          <tr><td>三</td><td>自分が何かをしている</td><td><span class="ch">第三・五章</span>五十八キロ／『みにいった』</td><td>行き先が元妻の家だと分かる。読者の不安が最大になる場所</td></tr>
+          <tr><td>四</td><td>それは加害ではないのか</td><td><span class="ch">第六章</span>医師が「傷は」と訊く／「なおさら、話してください」</td><td>作中の人物に、読者と同じ懸念を言わせる</td></tr>
+          <tr><td>五</td><td>——</td><td><span class="ch">第七・八章</span>植木鉢の中の六十四枚</td><td>怖さを消さずに、意味だけを裏返す</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sec-note">五段目のあとも不穏さは残したままにしてあります。症状は治らず、彼は自分の人生のいちばんいい時間に、最後まで立ち会えません。冒頭の一文と最終行だけが入れ替わり、木曜日はそこに残ります。</p>
+  </section>
+
+  <p class="foot">「長い一週間が過ぎ、短い休日が訪れる。」──「短い休日が過ぎ、長い一週間が訪れる。／その真ん中に、木曜日がある。」</p>
+
+</div>
+</details>
+
+<script>
+(function(){
+  var root=document.documentElement, KEY="mjkk-mode";
+  var btns=[].slice.call(document.querySelectorAll("[data-set-mode]"));
+  function sync(){
+    var m=root.getAttribute("data-mode");
+    btns.forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-set-mode")===m)); });
+  }
+  function toStart(){
+    if(root.getAttribute("data-mode")!=="tate") return;
+    var list=document.querySelectorAll(".ch-body");
+    for(var i=0;i<list.length;i++){
+      var el=list[i], prev=el.style.scrollBehavior, p0=el.querySelector("p");
+      el.style.scrollBehavior="auto";
+      if(p0){ el.scrollLeft += (p0.getBoundingClientRect().right - el.getBoundingClientRect().right) + 4; }
+      el.style.scrollBehavior=prev;
+    }
+  }
+  function set(m){
+    root.setAttribute("data-mode", m);
+    try{ localStorage.setItem(KEY, m); }catch(e){}
+    sync(); toStart();
+  }
+  btns.forEach(function(b){ b.addEventListener("click", function(){ set(b.getAttribute("data-set-mode")); }); });
+  sync();
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", toStart); } else { toStart(); }
+  window.addEventListener("load", toStart);
+  var t; window.addEventListener("resize", function(){ clearTimeout(t); t=setTimeout(toStart, 250); });
+})();
+</script>
+</body>
+</html>

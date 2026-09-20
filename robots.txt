@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yusuke-aoki-bit.github.io/short-holiday/sitemap.xml
